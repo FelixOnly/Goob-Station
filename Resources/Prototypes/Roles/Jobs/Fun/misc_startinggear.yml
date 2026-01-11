@@ -16,7 +16,7 @@
     ears: ClothingHeadsetGrey
   storage:
     back:
-    - BoxSurvivalSlots # Goobstation - Slots Based Survival Boxes
+      - BoxSurvivalSlots # Goobstation - Slots Based Survival Boxes
 
 # Syndicate Operative Outfit - Civilian
 - type: startingGear
@@ -45,7 +45,7 @@
   - WeaponPistolViper # Goobstation - no fistfighting
   storage:
     back:
-    - BoxSurvivalSlots # Goobstation - Slots Based Survival Boxes
+      - BoxSurvivalSlots # Goobstation - Slots Based Survival Boxes
 
 # Syndicate Footsoldier Gear
 - type: startingGear
@@ -61,7 +61,7 @@
     shoes: ClothingShoesBootsCombatFilled
   storage:
     back:
-    - BoxSurvivalSyndicate
+      - BoxSurvivalSyndicate
 
 - type: startingGear
   id: SyndicateFootsoldierTeamLeaderGear
@@ -89,9 +89,9 @@
     gloves: ClothingHandsGlovesCombat
   storage:
     back:
-    - BoxSurvivalSlotsSecurity # Goobstation - Slots Based Survival Boxes
-    - Flash
-    - MagazinePistol
+      - BoxSurvivalSlotsSecurity # Goobstation - Slots Based Survival Boxes
+      - Flash
+      - MagazinePistol
 
 - type: startingGear
   id: BoxingKangarooGear
@@ -135,7 +135,7 @@
 - type: startingGear
   id: BrigmedicGear
   equipment: # Heavily goob edited
-#   eyes: ClothingEyesGlassesMedSec # CorvaxGoob-loadouts: replaced on a BrigmedicGlasses loadout
+    #   eyes: ClothingEyesGlassesMedSec # CorvaxGoob-loadouts: replaced on a BrigmedicGlasses loadout
     id: BrigmedicPDA
     ears: ClothingHeadsetBrigmedic # EE parity like i was told to do
     belt: ClothingBeltMedicalEMTFilled
@@ -144,10 +144,10 @@
     pocket2: WeaponDisabler # Goob
   storage:
     back:
-    - Flash
-    - MagazinePistol # CorvaxGoob-RubberAmmo
-    - MagazinePistol # CorvaxGoob-RubberAmmo
-    - MagazinePistolRubber # CorvaxGoob-RubberAmmo
+      - Flash
+      - MagazinePistol # CorvaxGoob-RubberAmmo
+      - MagazinePistol # CorvaxGoob-RubberAmmo
+      - MagazinePistolRubber # CorvaxGoob-RubberAmmo
 #   - ClothingMaskBreathMedicalSecurity # CorvaxGoob-loadouts: replaced on a BrigmedicMask loadout
 
 # Aghost
@@ -158,10 +158,28 @@
     id: AdminPDA
   storage:
     back:
-    - GasAnalyzer
-    - trayScanner
-    - AccessConfiguratorUniversal
-    - Multitool
+      - GasAnalyzer
+      - trayScanner
+      - AccessConfiguratorUniversal
+      - Multitool
+      # Wormix
+      - JawsOfLife
+      - PowerDrill
+      - WelderExperimental
+      - HolofanProjector
+      - DoorRemoteAll
+      - AdminHypo
+      - Handcuffs
+      - Handcuffs
+      - ClothingBeltWhipping
+      - ClownRecorder
+      - RubberStampChameleon
+      - RubberStampCentcom
+      - ImplanterAdmeme
+      - ChemistryBottleOmnizine
+      - ChemistryBottlePax
+      - ChemistryBottleToxin
+      - ChemistryBottleNocturine
 
 #Gladiator with spear
 - type: startingGear
