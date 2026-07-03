@@ -5,6 +5,7 @@ using Content.Client._durkcode.ServerCurrency;
 using Content.Client._RMC14.LinkAccount;
 CorvaxGoob-Coins-end */
 using Content.Client.Administration.Managers;
+using Content.Client.Audio.Midi;
 using Content.Client.Changelog;
 using Content.Client.Chat.Managers;
 using Content.Client.Clickable;
@@ -75,6 +76,7 @@ namespace Content.Client.IoC
             collection.Register<LinkAccountManager>(); // RMC14
             CorvaxGoob-Coins-end */
             collection.Register<ClientsidePlaytimeTrackingManager>();
+            collection.Register<MidiFileCollectionManager>();
         }
     }
 }
