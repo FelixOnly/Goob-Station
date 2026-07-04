@@ -26,6 +26,7 @@ using Robust.Shared.Utility;
 using YamlDotNet.RepresentationModel;
 using Content.Shared._CorvaxGoob.TTS;
 using Content.Corvax.Interfaces.Shared;
+using Content.Shared.ADT.SpeechBarks;
 using Robust.Shared.Enums;
 
 namespace Content.Shared.Humanoid;
@@ -61,7 +62,7 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem //go
     };
     // CorvaxGoob-TTS-End
     public static readonly ProtoId<SpeciesPrototype> DefaultSpecies = "Human";
-    public static readonly ProtoId<BarkPrototype> DefaultBarkVoice = "Alto"; // Goob Station - Barks
+    public static readonly ProtoId<Goobstation.Common.Barks.BarkPrototype> DefaultBarkVoice = "Alto"; // Goob Station - Barks
 
     public override void Initialize()
     {
@@ -551,6 +552,7 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem //go
         }
 
         EnsureDefaultMarkings(uid, humanoid);
+        SetBarkData(uid, profile.Bark, humanoid); // ADT-Barks
         SetTTSVoice(uid, profile.TTSVoice, humanoid); // CorvaxGoob-TTS
         // CorvaxGoob-Revert : DB conflicts
         // SetBarkVoice(uid, profile.BarkVoice, humanoid); // Goob Station - Barks
@@ -621,6 +623,18 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem //go
     }
     // CorvaxGoob-TTS-End
 
+    // ADT start
+    public void SetBarkData(EntityUid uid, BarkData data, HumanoidAppearanceComponent humanoid)
+    {
+        if (!TryComp<SpeechBarksComponent>(uid, out var comp))
+            return;
+
+        comp.Data = data;
+        comp.Data.Sound = _proto.Index(comp.Data.Proto).Sound;
+        humanoid.Bark = data;
+    }
+    // ADT end
+
     private void EnsureDefaultMarkings(EntityUid uid, HumanoidAppearanceComponent? humanoid)
     {
         if (!Resolve(uid, ref humanoid))
@@ -662,14 +676,14 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem //go
         var voicePrototypeId = DefaultBarkVoice;
 
         if (barkvoiceId != null &&
-            _proto.TryIndex<BarkPrototype>(barkvoiceId, out var bark) &&
+            _proto.TryIndex<Goobstation.Common.Barks.BarkPrototype>(barkvoiceId, out var bark) &&
             (bark.SpeciesWhitelist == null || bark.SpeciesWhitelist.Contains(humanoid.Species)))
         {
             voicePrototypeId = barkvoiceId;
         }
         else
         {
-            var barks = _proto.EnumeratePrototypes<BarkPrototype>()
+            var barks = _proto.EnumeratePrototypes<Goobstation.Common.Barks.BarkPrototype>()
                 .Where(o => o.RoundStart && (o.SpeciesWhitelist is null || o.SpeciesWhitelist.Contains(humanoid.Species)))
                 .ToList();
 
@@ -683,6 +697,7 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem //go
     }
     #endregion
     // Goob Station - Barks End
+
 
     /// <summary>
     /// Takes ID of the species prototype, returns UI-friendly name of the species.

@@ -358,6 +358,9 @@
     - Parasite
   - type: ObraDinnBody # Goobstation
   # </Goobstation>
+  # ADT
+  - type: SpeechBarks
+  # ADT
 
 - type: entity
   save: false
