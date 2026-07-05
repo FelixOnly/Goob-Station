@@ -140,10 +140,15 @@ public sealed partial class StationSpawningSystem : SharedStationSpawningSystem 
             _humanoidSystem.LoadProfile(entity.Value, profile);
             _metaSystem.SetEntityName(entity.Value, profile.Name);
 
-            if (profile.FlavorText != "" && _configurationManager.GetCVar(CCVars.FlavorText))
-            {
-                AddComp<DetailExaminableComponent>(entity.Value).Content = profile.FlavorText;
-            }
+            // if (profile.FlavorText != "" && _configurationManager.GetCVar(CCVars.FlavorText))
+            // {
+            //     AddComp<DetailExaminableComponent>(entity.Value).Content = profile.FlavorText;
+            // }
+
+            // Orion-Start
+            if (_configurationManager.GetCVar(CCVars.FlavorText))
+                AddComp<DetailExaminableComponent>(entity.Value).SetProfile(profile);
+            // Orion-End
         }
 
         if (loadout != null)

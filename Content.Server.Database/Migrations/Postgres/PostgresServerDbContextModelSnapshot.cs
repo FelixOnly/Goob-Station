@@ -1055,6 +1055,65 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("text")
                         .HasColumnName("bark_proto");
 
+                    b.Property<string>("CharacterFlavorText")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("character_flavor_text");
+
+                    b.Property<int>("ERPStatus")
+                        .HasColumnType("integer")
+                        .HasColumnName("erpstatus");
+
+                    b.Property<string>("GreenFlavorText")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("green_flavor_text");
+
+                    b.Property<string>("LinksFlavorText")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("links_flavor_text");
+
+                    b.Property<string>("NSFWFlavorText")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("nsfwflavor_text");
+
+                    b.Property<string>("NSFWLinksFlavorText")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("nsfwlinks_flavor_text");
+
+                    b.Property<string>("NSFWOOCFlavorText")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("nsfwoocflavor_text");
+
+                    b.Property<string>("NSFWTagsFlavorText")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("nsfwtags_flavor_text");
+
+                    b.Property<string>("OOCFlavorText")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("oocflavor_text");
+
+                    b.Property<string>("RedFlavorText")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("red_flavor_text");
+
+                    b.Property<string>("TagsFlavorText")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("tags_flavor_text");
+
+                    b.Property<string>("YellowFlavorText")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("yellow_flavor_text");
+
                     b.Property<string>("CharacterName")
                         .IsRequired()
                         .HasColumnType("text")
