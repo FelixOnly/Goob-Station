@@ -1091,6 +1091,8 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("TEXT")
                         .HasColumnName("hair_name");
 
+
+
                     b.Property<float>("HighBarkVar")
                         .HasColumnType("REAL")
                         .HasColumnName("high_bark_var");
@@ -1137,6 +1139,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .IsRequired()
                         .HasColumnType("TEXT")
                         .HasColumnName("species");
+
                     // Corvax-TTS-Start
                     b.Property<string>("TTSVoice")
                         .IsRequired()
@@ -1147,6 +1150,14 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("TEXT")
                         .HasColumnName("voice");
                     // Corvax-TTS-End
+
+                    b.Property<float>("Height")
+                        .HasColumnType("REAL")
+                        .HasColumnName("height");
+
+                    b.Property<float>("Width")
+                        .HasColumnType("REAL")
+                        .HasColumnName("width");
 
                     b.HasKey("Id")
                         .HasName("PK_profile");

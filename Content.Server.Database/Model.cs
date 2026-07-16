@@ -349,6 +349,8 @@ namespace Content.Server.Database
         public string? Voice { get; set; } = null!; // CorvaxGoob-TTS
         public string Gender { get; set; } = null!;
         public string Species { get; set; } = null!;
+        public float Height { get; set; } = 1f; // Goobstation: port EE height/width sliders
+        public float Width { get; set; } = 1f; // Goobstation: port EE height/width sliders
         public string BarkProto { get; set; } = null!; // ADT Barks
         public float BarkPitch { get; set; } = 1f; // ADT Barks
         public float LowBarkVar { get; set; } = 0.1f; // ADT Barks
