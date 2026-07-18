@@ -3,7 +3,7 @@
 - type: species
   id: Abductor
   name: species-name-abductor
-  roundStart: true # CorvaxGoob-Species : from false
+  roundStart: false # CorvaxGoob-Species : from false
   prototype: MobAbductor
   sprites: MobAbductorSprites
   markingLimits: MobAbductorMarkingLimits # CorvaxGoob-Species : from MobHumanMarkingLimits
@@ -12,7 +12,7 @@
   defaultSkinTone: "#BFC2C7"
   # CorvaxGoob-Species-Start
   sexes:
-  - Unsexed
+    - Unsexed
   maleFirstNames: AbductorNames
   femaleFirstNames: AbductorNames
   lastNames: AbductorLastNames
@@ -143,3 +143,4 @@
   baseSprite:
     sprite: _Shitmed/Mobs/Species/Abductor/parts.rsi
     state: r_foot
+
