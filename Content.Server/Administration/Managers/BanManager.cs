@@ -93,6 +93,7 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
         _cachedRoleBans[player] = userRoleBans;
 
         SendRoleBans(player);
+        InitializeDiscord();
     }
 
     private void ClearPlayerData(ICommonSession player)
@@ -168,8 +169,16 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
             ("hwid", hwidString),
             ("reason", banInfo.Reason));
 
+
         _sawmill.Info(logMessage);
         _chat.SendAdminAlert(logMessage);
+
+        // Wormix start
+        foreach (var user in banInfo.Users)
+        {
+            SendServerBanWebhook(banDef, user.UserName, adminName);
+        }
+        // Wormix end
 
         KickMatchingConnectedPlayers(banDef, "newly placed ban");
     }
@@ -254,6 +263,12 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
             ("role", string.Join(", ", roleDefs)),
             ("reason", banInfo.Reason),
             ("length", length)));
+
+        var adminName = banInfo.BanningAdmin == null
+            ? Loc.GetString("system-user")
+            : (await _db.GetPlayerRecordByUserId(banInfo.BanningAdmin.Value))?.LastSeenUserName ?? Loc.GetString("system-user");
+
+        SendRoleBanWebhook(banDef, targetName, adminName);
 
         foreach (var (userId, _) in banInfo.Users)
         {
