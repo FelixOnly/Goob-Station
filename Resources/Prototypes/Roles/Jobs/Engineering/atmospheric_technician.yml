@@ -5,10 +5,9 @@
   name: job-name-atmostech
   description: job-description-atmostech
   playTimeTracker: JobAtmosphericTechnician
-  requirements:
-  - !type:DepartmentTimeRequirement
-    department: Engineering
-    time: 2.5h
+  requirements: # Wormix edit
+    - !type:OverallPlaytimeRequirement
+      time: 10800 #3 hrs
   startingGear: AtmosphericTechnicianGear
   icon: "JobIconAtmosphericTechnician"
   supervisors: job-supervisors-ce

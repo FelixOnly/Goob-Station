@@ -5,16 +5,9 @@
   name: job-name-qm
   description: job-description-qm
   playTimeTracker: JobQuartermaster
-  requirements:
-    - !type:RoleTimeRequirement
-      role: JobCargoTechnician
-      time: 5h
-    - !type:RoleTimeRequirement
-      role: JobSalvageSpecialist
-      time: 2.5h
-    - !type:DepartmentTimeRequirement
-      department: Cargo
-      time: 10h
+  requirements: # Wormix edit
+    - !type:OverallPlaytimeRequirement
+      time: 10800 #3 hrs
     - !type:SpeciesRequirement # Goob - None Felinid
       inverted: true
       species:

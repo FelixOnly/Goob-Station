@@ -5,19 +5,9 @@
   name: job-name-hos
   description: job-description-hos
   playTimeTracker: JobHeadOfSecurity
-  requirements:
-    - !type:RoleTimeRequirement
-      role: JobWarden
-      time: 6h # Goobstation CorvaxGoob 5 hrs -> 6 hrs
-    - !type:RoleTimeRequirement
-      role: JobDetective
-      time: 2h # knowing how to use the tools is important CorvaxGoob 1 hour -> 2 hour
-    - !type:RoleTimeRequirement
-      role: JobSecurityOfficer
-      time: 10h # Goobstation
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 20h # CorvaxGoob 10 hrs -> 20 hrs
+  requirements: # Wormix edit
+    - !type:OverallPlaytimeRequirement
+      time: 21600 #6 hrs
     - !type:SpeciesRequirement # Goob - None Felinid
       inverted: true
       species:

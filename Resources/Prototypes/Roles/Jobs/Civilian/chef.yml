@@ -5,10 +5,9 @@
   name: job-name-chef
   description: job-description-chef
   playTimeTracker: JobChef
-  requirements:
-    - !type:DepartmentTimeRequirement
-      department: Civilian
-      time: 0.5h
+  requirements: # Wormix edit
+    - !type:OverallPlaytimeRequirement
+      time: 10800 #3 hrs
   startingGear: ChefGear
   icon: "JobIconChef"
   supervisors: job-supervisors-hop

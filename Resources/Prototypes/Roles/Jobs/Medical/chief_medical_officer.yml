@@ -5,19 +5,9 @@
   name: job-name-cmo
   description: job-description-cmo
   playTimeTracker: JobChiefMedicalOfficer
-  requirements:
-    - !type:RoleTimeRequirement
-      role: JobChemist
-      time: 2.5h
-    - !type:RoleTimeRequirement
-      role: JobMedicalDoctor
-      time: 5h
-    - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 10h
-    - !type:RoleTimeRequirement  # CorvaxGoob
-      role: JobSurgeon
-      time: 2h # CorvaxGoob
+  requirements: # Wormix edit
+    - !type:OverallPlaytimeRequirement
+      time: 10800 #3 hrs
     - !type:SpeciesRequirement # Goob - None Felinid
       inverted: true
       species:
