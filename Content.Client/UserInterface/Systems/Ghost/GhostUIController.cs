@@ -27,9 +27,10 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         gameplayStateLoad.OnScreenLoad += OnScreenLoad;
         gameplayStateLoad.OnScreenUnload += OnScreenUnload;
 
+        // Wormix remove
         // Goobstation - Thunderdome
-        _entManager.EventBus.SubscribeEvent<ThunderdomePlayerCountEvent>
-            (EventSource.Network, this, OnThunderdomePlayerCount);
+        // _entManager.EventBus.SubscribeEvent<ThunderdomePlayerCountEvent>
+        //     (EventSource.Network, this, OnThunderdomePlayerCount);
     }
 
     private void OnScreenLoad()
@@ -133,7 +134,8 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         Gui.GhostRolesPressed += GhostRolesPressed;
         Gui.GhostBarPressed += GhostBarPressed; // CorvaxGoob-GhostBar
         Gui.GhostBarWindow.SpawnButtonPressed += GhostBarSpawnPressed; // CorvaxGoob-GhostBar
-        Gui.ThunderdomePressed += ThunderdomePressed; // Goobstation - Thunderdome
+        // Wormix remove
+        // Gui.ThunderdomePressed += ThunderdomePressed; // Goobstation - Thunderdome
         Gui.TargetWindow.WarpClicked += OnWarpClicked;
         Gui.TargetWindow.OnGhostnadoClicked += OnGhostnadoClicked;
 
@@ -148,7 +150,8 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         Gui.RequestWarpsPressed -= RequestWarps;
         Gui.ReturnToBodyPressed -= ReturnToBody;
         Gui.GhostRolesPressed -= GhostRolesPressed;
-        Gui.ThunderdomePressed -= ThunderdomePressed; // Goobstation - Thunderdome
+        // Wormix remove
+        // Gui.ThunderdomePressed -= ThunderdomePressed; // Goobstation - Thunderdome
         Gui.TargetWindow.WarpClicked -= OnWarpClicked;
 
         Gui.Hide();
@@ -181,14 +184,15 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         _system?.GhostBarSpawn();
     }
 
+    // Wormix remove
     // Goobstation - Thunderdome
-    private void ThunderdomePressed()
-    {
-        _net.SendSystemNetworkMessage(new ThunderdomeJoinRequestEvent());
-    }
-
-    private void OnThunderdomePlayerCount(ThunderdomePlayerCountEvent ev)
-    {
-        Gui?.UpdateThunderdome(ev.Count);
-    }
+    // private void ThunderdomePressed()
+    // {
+    //     _net.SendSystemNetworkMessage(new ThunderdomeJoinRequestEvent());
+    // }
+    //
+    // private void OnThunderdomePlayerCount(ThunderdomePlayerCountEvent ev)
+    // {
+    //     Gui?.UpdateThunderdome(ev.Count);
+    // }
 }
