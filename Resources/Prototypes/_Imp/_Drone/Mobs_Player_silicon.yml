@@ -5,6 +5,15 @@
   abstract: true
   id: PlayerSiliconBase #for player controlled silicons. it's a shitty name, idk why they did it like that.
   components:
+  # Wormix start
+  - type: Posing
+  - type: SpeechBarks
+    data:
+      maxVar: 0.3
+      minVar: 0.1
+      pitch: 0.7
+      proto: Mettaton
+  # Wormix end
   - type: Reactive
     groups:
       Acidic: [Touch]

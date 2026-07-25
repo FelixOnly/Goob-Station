@@ -32,8 +32,16 @@
         - MobMask
         layer:
         - MobLayer
-  - type: TTS # CorvaxGoob-TTS
-    voice: TrainingRobot
+  # Wormix start
+  #- type: TTS # CorvaxGoob-TTS
+  #  voice: TrainingRobot
+  - type: Posing
+  - type: SpeechBarks
+    data:
+      maxVar: 0.3
+      minVar: 0.1
+      pitch: 0.7
+      proto: Mettaton
   - type: MovementSpeedModifier
     baseWalkSpeed : 2.5
     baseSprintSpeed : 4.5
