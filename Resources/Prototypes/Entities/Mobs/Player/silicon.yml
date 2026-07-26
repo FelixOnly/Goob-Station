@@ -72,6 +72,7 @@
       enum.CommunicationsConsoleUiKey.Key:
         toggleAction: ActionAGhostShowCommunications
   - type: CrewMonitoringConsole
+    doAlert: false # Orion
   - type: GeneralStationRecordConsole
   - type: DeviceNetwork
     deviceNetId: Wireless
