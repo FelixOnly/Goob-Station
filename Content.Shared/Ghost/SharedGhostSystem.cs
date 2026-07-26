@@ -214,4 +214,9 @@ namespace Content.Shared.Ghost
             AvailableGhostRoles = availableGhostRoleCount;
         }
     }
+
+    // Europa-Start
+    [Serializable, NetSerializable]
+    public sealed class GhostReturnToRoundRequest : EntityEventArgs;
+    // Europa-End
 }
