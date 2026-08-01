@@ -60,7 +60,7 @@ public sealed class BedSystem : EntitySystem
         Dirty(bed);
 
         // Single action entity, cannot strap multiple entities to the same bed.
-        DebugTools.AssertEqual(args.Strap.Comp.BuckledEntities.Count, 1);
+        // DebugTools.AssertEqual(args.Strap.Comp.BuckledEntities.Count, 1); // Orion-Edit: DoubleBed
     }
 
     private void OnUnstrapped(Entity<HealOnBuckleComponent> bed, ref UnstrappedEvent args)
