@@ -115,6 +115,7 @@
   - Mouse
   - Mothroach
   - Goldfish
+  - BeePack # Wormix
   # CorvaxGoob-loadouts-start
   - Cockroach
   - Butterfly
@@ -1789,7 +1790,7 @@
 - type: loadoutGroup
   id: MedicalEyewear
   name: loadout-group-medical-glasses
-  minLimit: 1 #Goobstation
+  minLimit: 0
   loadouts:
   - MedicalHud
   - MedicalEyePatchHud
