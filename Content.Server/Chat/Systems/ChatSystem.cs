@@ -198,7 +198,7 @@ public sealed partial class ChatSystem : SharedChatSystem
     }
 
     /// <inheritdoc />
-    public override void TrySendInGameICMessage(
+    public void TrySendInGameICMessage(
         EntityUid source,
         string message,
         InGameICChatType desiredType,
@@ -391,13 +391,56 @@ public sealed partial class ChatSystem : SharedChatSystem
 
     #region Announcements
 
-    /// <inheritdoc />
-    public override void DispatchGlobalAnnouncement(
+    // DS14-announce-start
+    public void DispatchAdminFilteredAnnouncement(
+        Filter filter,
         string message,
         string? sender = null,
         bool playSound = true,
         SoundSpecifier? announcementSound = null,
-        Color? colorOverride = null
+        Color? colorOverride = null)
+    {
+
+        sender ??= Loc.GetString("chat-manager-sender-announcement");
+
+        var wrappedMessage = Loc.GetString("chat-manager-sender-announcement-wrap-message",
+            ("sender", sender),
+            ("message", FormattedMessage.EscapeText(message)));
+
+        foreach (var session in filter.Recipients)
+        {
+            _chatManager.ChatMessageToOne(ChatChannel.Radio, message, wrappedMessage, default, false, session.Channel, colorOverride, true);
+        }
+
+        if (playSound)
+        {
+            if (announcementSound == null)
+            {
+                if (sender == Loc.GetString("chat-manager-sender-announcement"))
+                    announcementSound = new SoundPathSpecifier(CentComAnnouncementSound);
+            }
+
+            _audio.PlayGlobal(announcementSound ?? new SoundPathSpecifier(DefaultAnnouncementSound), filter, true, announcementSound?.Params ?? AudioParams.Default.WithVolume(-2f));
+        }
+
+        _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Filtered station announcement from {sender}: {message}");
+    }
+    // DS14-announce-end
+
+    /// <summary>
+    /// Dispatches an announcement to all.
+    /// </summary>
+    /// <param name="message">The contents of the message</param>
+    /// <param name="sender">The sender (Communications Console in Communications Console Announcement)</param>
+    /// <param name="playSound">Play the announcement sound</param>
+    /// <param name="colorOverride">Optional color for the announcement message</param>
+    public void DispatchGlobalAnnouncement(
+        string message,
+        string? sender = null,
+        bool playSound = true,
+        SoundSpecifier? announcementSound = null,
+        Color? colorOverride = null,
+        bool isCentcommSender = false // DS14-announce
         )
     {
         sender ??= Loc.GetString("chat-manager-sender-announcement");
