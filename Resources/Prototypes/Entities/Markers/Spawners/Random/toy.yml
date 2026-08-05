@@ -38,6 +38,15 @@
     - id: PlushieMoth
     - id: PlushieArachind
     - id: PlushiePenguin
+    # Wormix start
+    - id: PlushieCatBlack
+    - id: PlushieCatGrey
+    - id: PlushieCatWhite
+    - id: PlushieCatOrange
+    - id: PlushieCatTabby
+    - id: PlushieCatSiames
+    - id: PlushieCatTuxedo
+    # Wormix end
     # - id: PlushieVulp # Goob fuck off
     - !type:GroupSelector
       children:
