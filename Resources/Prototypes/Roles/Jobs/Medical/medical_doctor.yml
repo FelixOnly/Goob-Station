@@ -37,7 +37,7 @@
 - type: startingGear
   id: DoctorGear
   equipment:
-    ears: ClothingHeadsetMedical
+    #ears: ClothingHeadsetMedical # Wormix
     belt: ClothingBeltMedicalFilled
   #storage:
     #back:

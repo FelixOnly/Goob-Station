@@ -100,7 +100,7 @@
         orGroup: GiftPool
       - id: PlushieArachind
         orGroup: GiftPool
-      # Wormix start
+    # Wormix start
       - id: PlushieCatBlack
         orGroup: GiftPool
       - id: PlushieCatGrey
@@ -115,7 +115,7 @@
         orGroup: GiftPool
       - id: PlushieCatTuxedo
         orGroup: GiftPool
-      # Wormix end
+    # Wormix end
       - id: ClothingNeckCloakMoth
         orGroup: GiftPool
       - id: TennisBall

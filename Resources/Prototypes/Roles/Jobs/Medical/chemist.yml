@@ -33,7 +33,7 @@
   id: ChemistGear
   equipment:
     id: ChemistryPDA
-    ears: ClothingHeadsetMedical
+    #ears: ClothingHeadsetMedical # Wormix
     belt: ChemBagFilled
     pocket1: HandLabeler
     eyes: ClothingEyesGlassesChemical

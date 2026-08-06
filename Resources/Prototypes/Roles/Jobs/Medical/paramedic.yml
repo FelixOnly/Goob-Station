@@ -36,7 +36,7 @@
   id: ParamedicGear
   equipment:
     id: ParamedicPDA
-    ears: ClothingHeadsetMedical
+    #ears: ClothingHeadsetMedical # Wormix
     belt: ClothingBeltMedicalEMTFilled
   storage:
     back:
