@@ -746,6 +746,26 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.ToTable("blacklist", (string)null);
                 });
 
+            modelBuilder.Entity("Content.Server.Database.CharacterWhitelist", b =>
+                {
+                    b.Property<int>("ProfileId")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("profile_id");
+
+                    b.Property<string>("RoleIdAllow")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("role_id_allow");
+
+                    b.Property<string>("RoleIdDeny")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("role_id_deny");
+
+                    b.HasKey("ProfileId", "RoleIdAllow", "RoleIdDeny")
+                        .HasName("PK_character_whitelists");
+
+                    b.ToTable("character_whitelists", (string)null);
+                });
+
             modelBuilder.Entity("Content.Server.Database.ConnectionLog", b =>
                 {
                     b.Property<int>("Id")
@@ -1807,6 +1827,18 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.Navigation("Round");
                 });
 
+            modelBuilder.Entity("Content.Server.Database.CharacterWhitelist", b =>
+                {
+                    b.HasOne("Content.Server.Database.Profile", "Profile")
+                        .WithMany("JobWhitelists")
+                        .HasForeignKey("ProfileId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_character_whitelists_profile_profile_id");
+
+                    b.Navigation("Profile");
+                });
+
             modelBuilder.Entity("Content.Server.Database.ConnectionLog", b =>
                 {
                     b.HasOne("Content.Server.Database.Server", "Server")
@@ -2107,6 +2139,8 @@ namespace Content.Server.Database.Migrations.Sqlite
             modelBuilder.Entity("Content.Server.Database.Profile", b =>
                 {
                     b.Navigation("Antags");
+
+                    b.Navigation("JobWhitelists");
 
                     b.Navigation("Jobs");
 

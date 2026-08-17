@@ -37,6 +37,7 @@ using Robust.Shared.Utility;
 using Content.Server._CorvaxGoob.TTS;
 using Content.Server.Corvax.GuideGenerator;
 using System.IO;
+using Content.Server.Players;
 
 namespace Content.Server.Entry
 {
@@ -81,6 +82,8 @@ namespace Content.Server.Entry
         [Dependency] private readonly ServerApi _serverApi = default!;
         [Dependency] private readonly ServerInfoManager _serverInfo = default!;
         [Dependency] private readonly ServerUpdateManager _updateManager = default!;
+        [Dependency] private readonly JobCharacterWhitelistManager _jobWhitelistManager = default!;
+
 
         //[Dependency] private readonly LastRolledAntagManager _lastAntagManager = default!; // Goobstation CorvaxGoob-Deleted
 
@@ -189,6 +192,10 @@ namespace Content.Server.Entry
             _connection.PostInit();
             _multiServerKick.Initialize();
             _cvarCtrl.Initialize();
+
+            //Wormix start
+            _jobWhitelistManager.Initialize();
+            //Wormix end
         }
 
         public override void Update(ModUpdateLevel level, FrameEventArgs frameEventArgs)
