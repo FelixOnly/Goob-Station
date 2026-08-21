@@ -13,6 +13,13 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+# AI Zalupa
+.idea
+.agents
+.claude
+CLAUDE.md
+
+
 # Secret
 Secrets
 Resources/Prototypes/CorvaxSecrets
@@ -20,6 +27,8 @@ Resources/Prototypes/CorvaxSecretsServer
 Resources/Textures/CorvaxSecrets
 Resources/Audio/CorvaxSecrets
 Resources/Locale/ru-RU/corvax-secrets
+
+
 
 # Build results
 [Dd]ebug/
