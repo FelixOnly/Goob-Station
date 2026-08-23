@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT
 
+using System.Text.RegularExpressions;
 using Content.Server.Chat.Systems;
 using Content.Shared.Radio.Components;
 using Content.Server._EinsteinEngines.Language;
@@ -141,6 +142,24 @@ public sealed class HeadsetSystem : SharedHeadsetSystem
             {
                 Message = canUnderstand ? args.OriginalChatMsg : args.LanguageObfuscatedChatMsg
             };
+
+            // Wormix Start
+            if (TryComp(parent, out MetaDataComponent? meta))
+            {
+                Console.WriteLine(meta.EntityPrototype?.ID);
+
+                if (meta.EntityPrototype?.ID != "AdminObserver")
+                {
+                    msg.Message.WrappedMessage = Regex.Replace(
+                        msg.Message.WrappedMessage,
+                        @"\[icon\b[^\]]*\]\s*",
+                        ""
+                    );
+                }
+            }
+            // Wormix End
+
+
             _netMan.ServerSendMessage(msg, actor.PlayerSession.Channel);
         }
         // Einstein Engines - Language end
