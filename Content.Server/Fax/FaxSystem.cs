@@ -7,10 +7,13 @@ using Content.Server.Administration;
 using Content.Server.Administration.Managers;
 using Content.Server.Chat.Managers;
 using Content.Server.DeviceNetwork.Systems;
-using Content.Server.Explosion.EntitySystems; // Goobstation
+using Content.Server.Discord;
+using Content.Server.Explosion.EntitySystems;
+using Content.Server.GameTicking; // Goobstation
 using Content.Server.Popups;
 using Content.Server.Power.Components;
 using Content.Server.Tools;
+using Content.Shared._Wormix.CCVar;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Database;
@@ -33,6 +36,7 @@ using Content.Shared.UserInterface;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
+using Robust.Shared.Configuration;
 using Robust.Shared.Containers;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
@@ -60,6 +64,13 @@ public sealed class FaxSystem : EntitySystem
     [Dependency] private readonly SharedContainerSystem _container = default!; // Goobstation
     [Dependency] private readonly TransformSystem _transform = default!; // Goobstation
     [Dependency] private readonly ExplosionSystem _explosion = default!; // Goobstation
+
+    // Wormix start
+    [Dependency] private readonly IConfigurationManager _cfg = default!;
+    [Dependency] private readonly GameTicker _ticker = default!;
+    [Dependency] private readonly DiscordWebhook _discord = default!;
+    private WebhookData? _webhook;
+    // Wormix End
 
     private static readonly ProtoId<ToolQualityPrototype> ScrewingQuality = "Screwing";
 
@@ -90,7 +101,20 @@ public sealed class FaxSystem : EntitySystem
         SubscribeLocalEvent<FaxMachineComponent, FaxSendMessage>(OnSendButtonPressed);
         SubscribeLocalEvent<FaxMachineComponent, FaxRefreshMessage>(OnRefreshButtonPressed);
         SubscribeLocalEvent<FaxMachineComponent, FaxDestinationMessage>(OnDestinationSelected);
+
+        // Discord
+
+        var value = _cfg.GetCVar(CCVar.FaxDiscordWebhook);
+        if (!string.IsNullOrEmpty(value))
+        {
+            _discord.TryGetWebhook(value, val => _webhook = val);
+        }
     }
+
+
+
+
+
 
     public override void Update(float frameTime)
     {
@@ -711,6 +735,9 @@ public sealed class FaxSystem : EntitySystem
 
         if (printout != null) // Goobstation
             component.PrintingQueue.Enqueue(printout);
+
+        if(component.NotifyAdmins && printout != null)
+            NotifyDiscord(faxName, printout);
     }
 
     private void SpawnPaperFromQueue(EntityUid uid, FaxMachineComponent? component = null)
@@ -751,6 +778,80 @@ public sealed class FaxSystem : EntitySystem
 
         _adminLogger.Add(LogType.Action, LogImpact.Low, $"\"{component.FaxName}\" {ToPrettyString(uid):tool} printed {ToPrettyString(printed):subject}: {printout.Content}");
     }
+
+    // Wormix Fax-Discord webhook start
+    private async void NotifyDiscord(string faxName, FaxPrintout printout)
+    {
+        try
+        {
+            if (_webhook is null)
+                return;
+
+            var hook = _webhook.Value.ToIdentifier();
+
+            var footer = Loc.GetString("fax-notify-discord-footer", ("round", _ticker.RoundId));
+            var title = Loc.GetString("fax-notify-discord-head", ("sender",faxName));
+            var color = 0x17A03D; // green
+
+            var documentStamps = printout?.StampedBy;
+            string stampsList = "Печати отсутствуют";
+
+            if (documentStamps != null )
+            {
+                if (documentStamps.Count > 0)
+                {
+                    stampsList = "";
+
+                    foreach (var stamp in documentStamps)
+                    {
+                        if(stamp.StampedName.StartsWith("stamp-component-stamped-name"))
+                            stampsList += $"{Loc.GetString(stamp.StampedName)} ";
+                        else
+                            stampsList += $"{stamp.StampedName}(подпись) ";
+                    }
+                }
+            }
+
+
+            var stampsEmbed = new WebhookEmbedField()
+            {
+                Name = Loc.GetString("fax-stamps-discord-head"),
+                Value = stampsList,
+            };
+
+            var nameEmbed = new WebhookEmbedField()
+            {
+                Name = Loc.GetString("fax-name-discord-head"),
+                Value = printout?.Name ?? "Название отсутствует",
+            };
+
+            var mainEmbed = new WebhookEmbed
+            {
+                Title = title,
+                Description = printout?.Content ?? "Произошла ошибка чтения документа",
+                Color = color,
+                Fields = new List<WebhookEmbedField>() { stampsEmbed, nameEmbed},
+                Footer = new WebhookEmbedFooter
+                {
+                    Text = footer,
+                },
+                Timestamp = DateTime.UtcNow,
+            };
+
+            var payload = new WebhookPayload
+            {
+                Embeds = new List<WebhookEmbed> { mainEmbed },
+            };
+
+            await _discord.CreateMessage(hook, payload);
+        }
+        catch (Exception e)
+        {
+            Log.Error($"Failed to send fax information to webhook!\n{e}");
+        }
+    }
+    // Wormix end
+
 
     private void NotifyAdmins(string faxName)
     {
