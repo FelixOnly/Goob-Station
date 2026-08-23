@@ -1,12 +1,9 @@
 // SPDX-License-Identifier: MIT
 
-using System.Text.RegularExpressions;
 using Content.Server.Chat.Systems;
 using Content.Shared.Radio.Components;
 using Content.Server._EinsteinEngines.Language;
-using Content.Shared._EinsteinEngines.Language;
 using Content.Shared.Chat;
-using Content.Shared.Ghost;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Radio;
 using Content.Shared.Radio.EntitySystems;
@@ -137,8 +134,6 @@ public sealed class HeadsetSystem : SharedHeadsetSystem
             RaiseLocalEvent(parent, ref relayEvent);
         }
 
-
-
         if (TryComp(parent, out ActorComponent? actor))
         {
             var canUnderstand = _language.CanUnderstand(parent, args.Language.ID);
@@ -146,32 +141,9 @@ public sealed class HeadsetSystem : SharedHeadsetSystem
             {
                 Message = canUnderstand ? args.OriginalChatMsg : args.LanguageObfuscatedChatMsg
             };
-
-
-            // Wormix Start
-            if (TryComp(parent, out MetaDataComponent? meta))
-            {
-                Console.WriteLine(meta.EntityPrototype?.ID);
-
-                if (meta.EntityPrototype?.ID != "AdminObserver")
-                {
-                    msg.Message.WrappedMessage = Regex.Replace(
-                        msg.Message.WrappedMessage,
-                        @"\[icon\b[^\]]*\]\s*",
-                        ""
-                    );
-                }
-            }
-            // Wormix End
-
             _netMan.ServerSendMessage(msg, actor.PlayerSession.Channel);
         }
         // Einstein Engines - Language end
-
-
-
-
-
     }
 
     // Goobstation - Whitelisted radio channel

@@ -32,7 +32,7 @@
     # shoes: ClothingShoesColorWhite - Goob: See above
     id: MimePDA
     pocket1: CrayonMime
-    #ears: ClothingHeadsetService # Wormix
+    ears: ClothingHeadsetService
   storage:
     back:
     - RubberStampMime

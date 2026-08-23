@@ -28,7 +28,7 @@
   equipment:
     shoes: ClothingShoesColorBlack
     id: BartenderPDA
-    #ears: ClothingHeadsetService # Wormix
+    ears: ClothingHeadsetService
   #storage:
     #back:
     #- Stuff

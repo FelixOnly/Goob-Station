@@ -30,7 +30,7 @@
   equipment:
     shoes: ClothingShoesColorBlack
     id: ChaplainPDA
-    #ears: ClothingHeadsetService # Wormix
+    ears: ClothingHeadsetService
   storage:
     back:
     - ChaplainUndeterminedBible

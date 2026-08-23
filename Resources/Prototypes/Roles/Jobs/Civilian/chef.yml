@@ -39,7 +39,7 @@
   equipment:
     shoes: ClothingShoesChef
     id: ChefPDA
-    #ears: ClothingHeadsetService # Wormix
+    ears: ClothingHeadsetService
     belt: ClothingBeltChefFilled
   #storage:
     #back:
