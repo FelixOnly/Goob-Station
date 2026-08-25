@@ -48,6 +48,8 @@ namespace Content.Client.Lobby
 
         protected override Type? LinkedScreenType { get; } = typeof(LobbyGui);
         public LobbyGui? Lobby;
+        public LateJoinGui? lateJoin;//Wormix
+
 
         protected override void Startup()
         {
@@ -123,6 +125,7 @@ namespace Content.Client.Lobby
         {
             SetReady(false);
             Lobby?.SwitchState(LobbyGui.LobbyGuiState.CharacterSetup);
+            lateJoin?.Close(); // Wormix
         }
 
         /* CorvaxGoob-Coins-start
@@ -139,7 +142,10 @@ namespace Content.Client.Lobby
                 return;
             }
 
-            new LateJoinGui().OpenCentered();
+            //Wormix start
+            lateJoin = new LateJoinGui();
+            lateJoin.OpenCentered();
+            //Wormix End
         }
 
         private void OnReadyToggled(BaseButton.ButtonToggledEventArgs args)
