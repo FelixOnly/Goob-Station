@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server._CorvaxGoob.Events; // CorvaxGoob-GoLobby
+using System.Threading.Tasks;
 using Content.Corvax.Interfaces.Server;
+using Content.Server.Players;
 using Content.Shared.Administration;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
@@ -23,6 +25,8 @@ namespace Content.Server.GameTicking
     public sealed partial class GameTicker
     {
         [Dependency] private readonly IPlayerManager _playerManager = default!;
+        [Dependency] private readonly JobCharacterWhitelistManager _whitelistManager = default!; // Wormix
+
 
         private void InitializePlayer()
         {
@@ -192,6 +196,49 @@ namespace Content.Server.GameTicking
             return (HumanoidCharacterProfile) _prefsManager.GetPreferences(p.UserId).SelectedCharacter;
         }
 
+        // Wormix start
+
+        public async Task<bool> IsJobDenied(ICommonSession p, string jobName)
+        {
+            var character = _prefsManager.GetPreferences(p.UserId).SelectedCharacter;
+
+            var characterId = await _whitelistManager.FindIdCharacterByName(p, character.Name);
+
+            var denies = await _whitelistManager.GetAllCharacterDenies(characterId);
+
+            foreach (var deny in denies)
+            {
+                if (deny == jobName)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public async Task<bool> IsJobAllow(ICommonSession p, string jobName)
+        {
+            var character = _prefsManager.GetPreferences(p.UserId).SelectedCharacter;
+
+            var characterId = await _whitelistManager.FindIdCharacterByName(p, character.Name);
+
+            var allowed = await _whitelistManager.GetAllCharacterAllowed(characterId);
+
+            foreach (var allow in allowed)
+            {
+                if (allow == jobName)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        // Wormix end
+
+
         public void PlayerJoinGame(ICommonSession session, bool silent = false)
         {
             if (!silent)
@@ -212,7 +259,7 @@ namespace Content.Server.GameTicking
             RaiseNetworkEvent(new TickerJoinGameEvent(), session.Channel);
         }
 
-        private void PlayerJoinLobby(ICommonSession session) 
+        private void PlayerJoinLobby(ICommonSession session)
         {
             _playerGameStatuses[session.UserId] = LobbyEnabled ? PlayerGameStatus.NotReadyToPlay : PlayerGameStatus.ReadyToPlay;
             _db.AddRoundPlayers(RoundId, session.UserId);
