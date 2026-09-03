@@ -164174,7 +164174,7 @@ entities:
       parent: 15205
     - type: Physics
       canCollide: False
-- proto: ClothingHeadHatBeretHoS
+- proto: ClothingHeadHatBeretFrench
   entities:
   - uid: 15214
     components:
