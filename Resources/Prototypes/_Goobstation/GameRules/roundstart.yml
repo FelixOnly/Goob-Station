@@ -9,7 +9,7 @@
   - type: SubGamemodes
     rules:
     - id: SubgamemodeTraitor
-      prob: 0.5
+      prob: 0 #0.5
 
 # GameModes
 
@@ -35,7 +35,7 @@
     agentName: changeling-roundend-name
     definitions:
     - prefRoles: [ Changeling ]
-      max: 4
+      max: 0 #4
       playerRatio: 12
       chaosScore: 200
       jobBlacklist: [ Chaplain ] # GOOBSTATION
@@ -69,7 +69,7 @@
   - type: AntagSelection
     definitions:
     - prefRoles: [ Traitor ]
-      max: 2
+      max: 0 #2
       playerRatio: 25
       chaosScore: 300
       jobBlacklist: [ NanotrasenRepresentative ]
@@ -93,7 +93,7 @@
     selectionTime: IntraPlayerSpawn
     definitions:
     - prefRoles: [ Traitor ]
-      max: 3
+      max: 0 #3
       playerRatio: 15
       blacklist:
         components:
