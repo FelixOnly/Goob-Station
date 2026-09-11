@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using System.Linq;
+using System.Threading.Tasks;
 using Content.Server.Administration;
 using Content.Server.Administration.Managers;
 using Content.Server.Afk;
@@ -9,6 +10,7 @@ using Content.Server.GameTicking;
 using Content.Server.GameTicking.Events;
 using Content.Server.Preferences.Managers;
 using Content.Server.Station.Events;
+using Content.Shared._Wormix.Players;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
 using Content.Shared.Mobs;
@@ -39,6 +41,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototypes = default!;
     [Dependency] private readonly SharedRoleSystem _roles = default!;
     [Dependency] private readonly PlayTimeTrackingManager _tracking = default!;
+    [Dependency] private readonly JobCharacterWhitelistManager _whitelistManager = default!; // Wormix
 
     public override void Initialize()
     {
@@ -180,7 +183,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
 
     private void OnStationJobsGetCandidates(ref StationJobsGetCandidatesEvent ev)
     {
-        RemoveDisallowedJobs(ev.Player, ev.Jobs);
+        RemoveDisallowedJobs(ev.Player, ev.Jobs, ev.CharactersAllow, ev.CharactersDeny);
     }
 
     private void OnIsRoleAllowed(ref IsRoleAllowedEvent ev)
@@ -311,7 +314,12 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
         return roles;
     }
 
-    public void RemoveDisallowedJobs(NetUserId userId, List<ProtoId<JobPrototype>> jobs)
+
+    public void RemoveDisallowedJobs(
+        NetUserId userId,
+        List<ProtoId<JobPrototype>> jobs,
+        List<CharacterWhitelistRoleWithUser> CharactersAllow, // Wormix
+        List<CharacterWhitelistRoleWithUser> CharactersDeny) // Wormix
     {
         if (!_cfg.GetCVar(CCVars.GameRoleTimers))
             return;
@@ -324,9 +332,36 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
             playTimes ??= new Dictionary<string, TimeSpan>();
         }
 
+        // Wormix start
+        var playerAllow = CharactersAllow
+            .Where(x => x.player == userId)
+            .Select(x => x.job)
+            .ToList();
+
+
+        var playerDeny = CharactersDeny
+            .Where(x => x.player == userId)
+            .Select(x => x.job)
+            .ToList();
+
+
         for (var i = 0; i < jobs.Count; i++)
         {
-            if (_prototypes.Resolve(jobs[i], out var job)
+
+             if (playerDeny.Contains(jobs[i].Id))
+             {
+                 jobs.RemoveSwap(i);
+                 i--;
+                 continue;
+             }
+
+             if (playerAllow.Contains(jobs[i].Id))
+             {
+                 continue;
+             }
+            // Wormix end
+
+            if (_prototypes.TryIndex(jobs[i], out var job)
                 && JobRequirements.TryRequirementsMet(job, playTimes, out _, EntityManager, _prototypes, (HumanoidCharacterProfile?) _preferencesManager.GetPreferences(userId).SelectedCharacter))
             {
                 continue;
