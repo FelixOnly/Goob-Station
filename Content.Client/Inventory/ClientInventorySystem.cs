@@ -14,7 +14,6 @@ using Robust.Client.UserInterface;
 using Robust.Shared.Containers;
 using Robust.Shared.Input.Binding;
 using Robust.Shared.Player;
-using Robust.Shared.Timing;
 
 namespace Content.Client.Inventory
 {
@@ -23,6 +22,7 @@ namespace Content.Client.Inventory
     {
         [Dependency] private readonly IPlayerManager _playerManager = default!;
         [Dependency] private readonly IUserInterfaceManager _ui = default!;
+
         [Dependency] private readonly ClientClothingSystem _clothingVisualsSystem = default!;
         [Dependency] private readonly ExamineSystem _examine = default!;
 
@@ -94,14 +94,6 @@ namespace Content.Client.Inventory
 
         private void OnShutdown(EntityUid uid, InventoryComponent component, ComponentShutdown args)
         {
-            if (TryComp(uid, out InventorySlotsComponent? inventorySlots))
-            {
-                foreach (var slot in component.Slots)
-                {
-                    TryRemoveSlotData((uid, inventorySlots), (SlotData)slot);
-                }
-            }
-
             if (uid == _playerManager.LocalEntity)
                 OnUnlinkInventory?.Invoke();
         }
@@ -113,20 +105,44 @@ namespace Content.Client.Inventory
 
         private void OnPlayerAttached(EntityUid uid, InventorySlotsComponent component, LocalPlayerAttachedEvent args)
         {
+            if (TryGetSlots(uid, out var definitions))
+            {
+                foreach (var definition in definitions)
+                {
+                    if (!TryGetSlotContainer(uid, definition.Name, out var container, out _))
+                        continue;
+
+                    if (!component.SlotData.TryGetValue(definition.Name, out var data))
+                    {
+                        data = new SlotData(definition);
+                        component.SlotData[definition.Name] = data;
+                    }
+
+                    data.Container = container;
+                }
+            }
+
             OnLinkInventorySlots?.Invoke(uid, component);
-        }
-
-        protected override void OnInit(Entity<InventoryComponent> ent, ref ComponentInit args)
-        {
-            base.OnInit(ent, ref args);
-
-            _clothingVisualsSystem.InitClothing(ent.Owner, ent.Comp);
         }
 
         public override void Shutdown()
         {
             CommandBinds.Unregister<ClientInventorySystem>();
             base.Shutdown();
+        }
+
+        protected override void OnInit(Entity<InventoryComponent> ent, ref ComponentInit args)
+        {
+            base.OnInit(ent, ref args);
+            _clothingVisualsSystem.InitClothing(ent, ent.Comp);
+
+            if (!TryComp(ent, out InventorySlotsComponent? inventorySlots))
+                return;
+
+            foreach (var slot in ent.Comp.Slots)
+            {
+                TryAddSlotDef(ent, inventorySlots, slot);
+            }
         }
 
         public void ReloadInventory(InventorySlotsComponent? component = null)
@@ -281,6 +297,7 @@ namespace Content.Client.Inventory
             [ViewVariables] public bool Highlighted;
             [ViewVariables] public ContainerSlot? Container;
             [ViewVariables] public bool HasSlotGroup => SlotDef.SlotGroup != "Default";
+            [ViewVariables] public bool HasExtraSlotGroup => SlotDef.SlotGroup == "Extra"; // Orion
             [ViewVariables] public Vector2i ButtonOffset => SlotDef.UIWindowPosition;
             [ViewVariables] public string SlotName => SlotDef.Name;
             [ViewVariables] public bool ShowInWindow => SlotDef.ShowInWindow;

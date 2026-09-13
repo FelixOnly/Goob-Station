@@ -16,10 +16,10 @@ namespace Content.Shared.Humanoid
         Wings, // For IPC wings porting from SimpleStation
         Hair,
         FacialHair,
-        UndergarmentTop,
-        UndergarmentBottom,
         Face, // EE Plasmeme Port
         Chest,
+//        Underwear, // Orion-Edit: Removed
+//        Undershirt, // Orion-Edit: Removed
         Groin,
         Head,
         Snout,
@@ -33,6 +33,7 @@ namespace Content.Shared.Humanoid
         RArm,
         LArm,
         RHand,
+
         LHand,
         RLeg,
         LLeg,

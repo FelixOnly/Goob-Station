@@ -34,8 +34,6 @@
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
-    UndergarmentBottom: MobHumanoidAnyMarking
-    UndergarmentTop: MobHumanoidAnyMarking
     Chest: MobResomiChest
     Groin: MobResomiGroin
     Eyes: MobResomiEyes
@@ -74,12 +72,12 @@
     Chest:
       points: 10
       required: false
-    UndergarmentBottom:
-      points: 1
-      required: false
-    UndergarmentTop:
-      points: 1
-      required: false
+#    Underwear: # Orion-Edit: Removed
+#      points: 1
+#      required: false
+#    Undershirt: # Orion-Edit: Removed
+#      points: 1
+#      required: false
     RightLeg:
       points: 2
       required: false

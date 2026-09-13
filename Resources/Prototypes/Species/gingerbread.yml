@@ -19,8 +19,8 @@
     Head: MobGingerbreadHead
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
-    UndergarmentBottom: MobHumanoidAnyMarking
-    UndergarmentTop: MobHumanoidAnyMarking
+#    Underwear: MobHumanoidAnyMarking # Orion-Edit: Removed
+#    Undershirt: MobHumanoidAnyMarking # Orion-Edit: Removed
     Chest: MobGingerbreadChest
     Groin: MobGingerbreadGroin
     Eyes: MobGingerbreadEyes

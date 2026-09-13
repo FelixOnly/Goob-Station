@@ -17,8 +17,8 @@ namespace Content.Shared.Humanoid.Markings
         Snout,
         SnoutCover,
         Chest,
-        UndergarmentTop,
-        UndergarmentBottom,
+        //UndergarmentTop,
+        //UndergarmentBottom,
         RightArm,
         RightHand,
         LeftArm,
@@ -31,8 +31,10 @@ namespace Content.Shared.Humanoid.Markings
         Legs,
         Groin, // Shitmed Change
         Wings, // For IPC wings porting from SimpleStation
+//        Underwear, // Orion-Edit: Removed
+//        Undershirt, // Orion-Edit: Removed
         Tail,
-        Overlay
+        Overlay,
     }
 
     public static class MarkingCategoriesConversion
@@ -49,9 +51,9 @@ namespace Content.Shared.Humanoid.Markings
                 HumanoidVisualLayers.HeadTop => MarkingCategories.HeadTop,
                 HumanoidVisualLayers.HeadSide => MarkingCategories.HeadSide,
                 HumanoidVisualLayers.Snout => MarkingCategories.Snout,
+//                HumanoidVisualLayers.Undershirt => MarkingCategories.Undershirt, // Orion-Edit: Removed
+//                HumanoidVisualLayers.Underwear => MarkingCategories.Underwear, // Orion-Edit: Removed
                 HumanoidVisualLayers.Chest => MarkingCategories.Chest,
-                HumanoidVisualLayers.UndergarmentTop => MarkingCategories.UndergarmentTop,
-                HumanoidVisualLayers.UndergarmentBottom => MarkingCategories.UndergarmentBottom,
                 HumanoidVisualLayers.Groin => MarkingCategories.Groin, // Shitmed Change
                 HumanoidVisualLayers.RArm => MarkingCategories.RightArm, // Goobstation
                 HumanoidVisualLayers.LArm => MarkingCategories.LeftArm, // Goobstation
@@ -63,7 +65,7 @@ namespace Content.Shared.Humanoid.Markings
                 HumanoidVisualLayers.RFoot => MarkingCategories.RightFoot, // Goobstation
                 HumanoidVisualLayers.Wings => MarkingCategories.Wings, // Goobstation
                 HumanoidVisualLayers.Tail => MarkingCategories.Tail,
-                _ => MarkingCategories.Overlay
+                _ => MarkingCategories.Overlay,
             };
         }
     }

@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
+/* Orion-Edit: Replaced with StationTimeManagerComponent
 using Robust.Shared.GameStates;
 
 namespace Content.Shared.Clock;
@@ -16,3 +17,4 @@ public sealed partial class GlobalTimeManagerComponent : Component
     [DataField, AutoPausedField, AutoNetworkedField]
     public TimeSpan TimeOffset;
 }
+*/

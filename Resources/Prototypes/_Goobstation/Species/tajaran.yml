@@ -47,12 +47,12 @@
     Chest:
       points: 10
       required: false
-    UndergarmentTop:
-      points: 1
-      required: false
-    UndergarmentBottom:
-      points: 1
-      required: false
+#    Underwear: # Orion-Edit: Removed
+#      points: 1
+#      required: false
+#    Undershirt: # Orion-Edit: Removed
+#      points: 1
+#      required: false
     RightLeg:
       points: 2
       required: false
@@ -87,8 +87,6 @@
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
-    UndergarmentBottom: MobHumanoidAnyMarking
-    UndergarmentTop: MobHumanoidAnyMarking
     Chest: MobTajaranChest
     Groin: MobTajaranGroin
     Eyes: MobTajaranEyes

@@ -93,6 +93,18 @@
           32:
             sprite: _White/Mobs/Species/displacement.rsi
             state: shoes
+      # Orion-Start
+      underwear:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: jumpsuit
+      socks:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: shoes
+      # Orion-End
     displacements:
       jumpsuit:
         sizeMaps:
@@ -104,6 +116,18 @@
           32:
             sprite: _White/Mobs/Species/displacement.rsi
             state: shoes
+      # Orion-Start
+      underwear:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: jumpsuit
+      socks:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: shoes
+      # Orion-End
     # WWDP-Edit-End
   - type: Consciousness # Idk they are kinda more resistant to pain
     threshold: 105
@@ -144,6 +168,18 @@
           32:
             sprite: _White/Mobs/Species/displacement.rsi
             state: shoes
+      # Orion-Start
+      underwear:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: jumpsuit
+      socks:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: shoes
+      # Orion-End
     displacements:
       jumpsuit:
         sizeMaps:
@@ -155,6 +191,18 @@
           32:
             sprite: _White/Mobs/Species/displacement.rsi
             state: shoes
+      # Orion-Start
+      underwear:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: jumpsuit
+      socks:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: shoes
+      # Orion-End
     # WWDP-Edit-End
 
 #Weh

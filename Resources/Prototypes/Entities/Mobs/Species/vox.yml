@@ -39,11 +39,11 @@
       Male: UnisexVox
       Female: UnisexVox
       Unsexed: UnisexVox
-  - type: Butcherable # CorvaxGoob organ resprite
+  - type: Butcherable
     butcheringType: Spike
     spawned:
-    - id: FoodMeatVox
-      amount: 3
+    - id: FoodMeatChicken
+      amount: 5
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: Vox
@@ -131,15 +131,22 @@
     - map: [ "enum.HumanoidVisualLayers.LArm" ]
     - map: [ "enum.HumanoidVisualLayers.RLeg" ]
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
-    - map: [ "enum.HumanoidVisualLayers.UndergarmentBottom" ]
-    - map: [ "enum.HumanoidVisualLayers.UndergarmentTop" ]
-    - map: [ "jumpsuit" ]
-    - map: [ "enum.HumanoidVisualLayers.LFoot" ]
-    - map: [ "enum.HumanoidVisualLayers.RFoot" ]
+    # Orion-Start
+    - map: [ "underwear" ]
+    - map: [ "undershirt" ]
+    # Orion-End
+    # Orion-Edit-Start: Moved under jumpsuit
+    - map: ["enum.HumanoidVisualLayers.LFoot"]
+    - map: ["enum.HumanoidVisualLayers.RFoot"]
+    # Orion-Edit-End
+    - map: [ "socks" ] # Orion
+    - map: ["jumpsuit"]
     - map: [ "enum.HumanoidVisualLayers.LHand" ]
     - map: [ "enum.HumanoidVisualLayers.RHand" ]
     - map: [ "gloves" ]
+    - map: [ "wrists" ] # Orion
     - map: [ "shoes" ]
+    - map: [ "earsright" ] # Orion
     - map: [ "ears" ]
     - map: [ "eyes" ]
     - map: [ "id" ]
@@ -219,6 +226,33 @@
           32:
             sprite: Mobs/Species/Vox/displacement.rsi
             state: outerClothing
+      # Orion-Start
+      undershirt:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vox/displacement.rsi
+            state: jumpsuit
+      underwear:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vox/displacement.rsi
+            state: jumpsuit
+      socks:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vox/displacement.rsi
+            state: shoes
+      earsright:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vox/displacement.rsi
+            state: ears
+      wrists:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vox/displacement.rsi
+            state: hand
+      # Orion-End
   # Goobstation start - voxes are uncloneable but do not rot - all the stuff from BaseMobSpeciesOrganic
   - type: Uncloneable
   - type: Barotrauma
@@ -309,9 +343,7 @@
   components:
   - type: HumanoidAppearance
     species: Vox
-    undergarmentTop: UndergarmentTopTanktopVox
-    undergarmentBottom: UndergarmentBottomBoxersVox
-    markingsDisplacement: # Goobstation?
+    markingsDisplacement:
       Hair:
         sizeMaps:
           32:
@@ -362,6 +394,33 @@
           32:
             sprite: Mobs/Species/Vox/displacement.rsi
             state: outerClothing
+      # Orion-Start
+      undershirt:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vox/displacement.rsi
+            state: jumpsuit
+      underwear:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vox/displacement.rsi
+            state: jumpsuit
+      socks:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vox/displacement.rsi
+            state: shoes
+      earsright:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vox/displacement.rsi
+            state: ears
+      wrists:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Vox/displacement.rsi
+            state: hand
+      # Orion-End
   - type: Hands
     leftHandDisplacement:
       sizeMaps:

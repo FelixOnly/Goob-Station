@@ -23,16 +23,25 @@
     - map: [ "enum.HumanoidVisualLayers.LArm" ]
     - map: [ "enum.HumanoidVisualLayers.RLeg" ]
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
-    - map: [ "enum.HumanoidVisualLayers.UndergarmentBottom" ]
-    - map: [ "enum.HumanoidVisualLayers.UndergarmentTop" ]
-    - map: ["jumpsuit"]
+#    - map: [ "enum.HumanoidVisualLayers.Underwear" ] # Goob 3370 | Orion-Edit: Replaced with clothes
+#    - map: [ "enum.HumanoidVisualLayers.Undershirt" ] # Goob 3370 | Orion-Edit: Replaced with clothes
+    # Orion-Start
+    - map: [ "underwear" ]
+    - map: [ "undershirt" ]
+    # Orion-End
+    # Orion-Edit-Start: Moved under jumpsuit
     - map: ["enum.HumanoidVisualLayers.LFoot"]
     - map: ["enum.HumanoidVisualLayers.RFoot"]
+    # Orion-Edit-End
+    - map: [ "socks" ] # Orion
+    - map: ["jumpsuit"]
     - map: ["enum.HumanoidVisualLayers.LHand"]
     - map: ["enum.HumanoidVisualLayers.RHand"]
     - map: ["enum.HumanoidVisualLayers.Face"] #Goob 120 - why did we have face on dummy but not basespecies
     - map: [ "gloves" ]
+    - map: [ "wrists" ] # Orion
     - map: [ "shoes" ]
+    - map: [ "earsright" ] # Orion
     - map: [ "ears" ]
     - map: [ "eyes" ]
     - map: [ "id" ]
@@ -390,11 +399,18 @@
     - map: [ "enum.HumanoidVisualLayers.LArm" ]
     - map: [ "enum.HumanoidVisualLayers.RLeg" ]
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
-    - map: [ "enum.HumanoidVisualLayers.UndergarmentBottom" ]
-    - map: [ "enum.HumanoidVisualLayers.UndergarmentTop" ]
-    - map: ["jumpsuit"]
+#    - map: [ "enum.HumanoidVisualLayers.Underwear" ] # Goob 3370 | Orion-Edit: Replaced with clothes
+#    - map: [ "enum.HumanoidVisualLayers.Undershirt" ] # Goob 3370 | Orion-Edit: Replaced with clothes
+    # Orion-Start
+    - map: [ "underwear" ]
+    - map: [ "undershirt" ]
+    # Orion-End
+    # Orion-Edit-Start: Moved under jumpsuit
     - map: ["enum.HumanoidVisualLayers.LFoot"]
     - map: ["enum.HumanoidVisualLayers.RFoot"]
+    # Orion-Edit-End
+    - map: [ "socks" ] # Orion
+    - map: ["jumpsuit"]
     - map: ["enum.HumanoidVisualLayers.LHand"]
     - map: ["enum.HumanoidVisualLayers.RHand"]
     - map: ["enum.HumanoidVisualLayers.Handcuffs"]
@@ -404,7 +420,9 @@
       visible: false
     - map: [ "enum.HumanoidVisualLayers.Face" ] # Goob 3370
     - map: [ "gloves" ]
+    - map: [ "wrists" ] # Orion
     - map: [ "shoes" ]
+    - map: [ "earsright" ] # Orion
     - map: [ "ears" ]
     - map: [ "eyes" ]
     - map: [ "id" ]

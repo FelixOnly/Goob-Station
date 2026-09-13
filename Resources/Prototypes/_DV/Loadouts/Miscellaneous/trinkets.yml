@@ -1,5 +1,11 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
+# Orion-Edit: Duplicate
+#- type: loadout
+#  id: GoldRing
+#  storage:
+#    back:
+#    - GoldRing
 - type: loadout
   id: GoldRing
   storage:
@@ -7,6 +13,12 @@
     - GoldRing
   groupBy: "ring" # GoobStation
 
+# Orion-Edit: Duplicate
+#- type: loadout
+#  id: SilverRing
+#  storage:
+#    back:
+#    - SilverRing
 - type: loadout
   id: SilverRing
   storage:

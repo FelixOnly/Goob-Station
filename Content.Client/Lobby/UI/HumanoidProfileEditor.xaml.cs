@@ -3,6 +3,12 @@
 using Content.Client._CorvaxGoob.CharacterEditor.UI; // CorvaxGoob-TTS
 using Content.Client._CorvaxGoob.Chat;
 using Content.Client._CorvaxGoob.TTS;
+using System.IO;
+using System.Linq;
+using System.Numerics;
+using Content.Client._Orion.Lobby.UI;
+using Content.Client._Orion.RichText;
+using Content.Client.Guidebook;
 using Content.Client.Humanoid;
 using Content.Client.Lobby.UI.Loadouts;
 using Content.Client.Lobby.UI.Roles;
@@ -44,20 +50,20 @@ using System.IO;
 using System.Linq;
 using System.Numerics;
 using Direction = Robust.Shared.Maths.Direction;
-using Content.Client._CorvaxGoob.TTS;
-using Content.Client._Orion.RichText;
-using Content.Shared._CorvaxGoob;
+using Content.Goobstation.Common.CCVar; // Goob Station - Barks
+using Content.Goobstation.Common.Barks;
 using Content.Shared._Orion.RichText;
 using Content.Shared.ADT.CCVar;
-using Content.Shared.SD; // CorvaxGoob-TTS
-
+using Content.Shared.SD; // Goob Station - Barks
 namespace Content.Client.Lobby.UI
 {
     [GenerateTypedNameReferences]
     public sealed partial class HumanoidProfileEditor : BoxContainer
     {
+        [Dependency] private readonly DocumentParsingManager _parsingMan = default!; // Orion
 
         private OptionButton _erpStatus = null!; // SD-ERP-Status
+        private ClothingDisplayMode _clothingDisplayMode;
 
         private readonly IClientPreferencesManager _preferencesManager;
         private readonly IConfigurationManager _cfgManager;
@@ -78,7 +84,6 @@ namespace Content.Client.Lobby.UI
 
         private FlavorText.FlavorText? _flavorText;
         private TextEdit? _flavorTextEdit;
-
         // Orion-Start
         private TextEdit? _flavorTextOOCEdit;
         private TextEdit? _characterTextEdit;
@@ -538,10 +543,28 @@ namespace Content.Client.Lobby.UI
 
             #endregion Left
 
+/* // Orion-Edit: Replaced
             ShowClothes.OnToggled += args =>
             {
                 ReloadPreview();
             };
+*/
+
+            // Orion-Start
+            _clothingDisplayMode = ClothingDisplayMode.ShowAll;
+
+            ClothingDisplayButton.AddItem(Loc.GetString("humanoid-profile-editor-clothing-show-all"), (int)ClothingDisplayMode.ShowAll);
+            ClothingDisplayButton.AddItem(Loc.GetString("humanoid-profile-editor-clothing-show-underwear"), (int)ClothingDisplayMode.ShowUnderwearOnly);
+            ClothingDisplayButton.AddItem(Loc.GetString("humanoid-profile-editor-clothing-hide-all"), (int)ClothingDisplayMode.HideAll);
+            ClothingDisplayButton.SelectId((int)ClothingDisplayMode.ShowAll);
+
+            ClothingDisplayButton.OnItemSelected += args =>
+            {
+                ClothingDisplayButton.SelectId(args.Id);
+                _clothingDisplayMode = (ClothingDisplayMode)args.Id;
+                ReloadPreview();
+            };
+            // Orion-End
 
             SpeciesInfoButton.OnPressed += OnSpeciesInfoButtonPressed;
 
@@ -1044,10 +1067,6 @@ namespace Content.Client.Lobby.UI
             for (var i = 0; i < _species.Count; i++)
             {
                 var name = Loc.GetString(_species[i].Name);
-
-                if (_species[i].SponsorOnly) // CorvaxGoob-Sponsors
-                    name += SponsorUtils.GetSponsorOnlySuffix();
-
                 SpeciesButton.AddItem(name, i);
 
                 if (Profile?.Species.Equals(_species[i].ID) == true)
@@ -1193,9 +1212,13 @@ namespace Content.Client.Lobby.UI
             if (Profile == null || !_prototypeManager.HasIndex(Profile.Species))
                 return;
 
-            PreviewDummy = _controller.LoadProfileEntity(Profile, JobOverride, ShowClothes.Pressed);
+            PreviewDummy = _controller.LoadProfileEntity(Profile, JobOverride, _clothingDisplayMode); // Orion-Edit: Clothing display mode
             SpriteView.SetEntity(PreviewDummy);
             _entManager.System<MetaDataSystem>().SetEntityName(PreviewDummy, Profile.Name);
+
+            // Orion-Start
+            _flavorText?.TargetPreview.SetEntity(PreviewDummy);
+            // Orion-End
 
             // Check and set the dirty flag to enable the save/reset buttons as appropriate.
             SetDirty();
@@ -1233,7 +1256,6 @@ namespace Content.Client.Lobby.UI
             UpdateEyePickers();
             UpdateSaveButton();
             UpdateMarkings();
-            UpdateTTSVoicesControls(); // CorvaxGoob-TTS
             UpdateBarkVoicesControls(); // ADT Barks
             // CorvaxGoob-Revert : DB conflicts
             // UpdateBarkVoice(); // Goob Station - Barks
@@ -1763,7 +1785,6 @@ namespace Content.Client.Lobby.UI
             }
 
             UpdateGenderControls();
-            UpdateTTSVoicesControls(); // CorvaxGoob-TTS
             Markings.SetSex(newSex);
             ReloadPreview();
         }
@@ -1832,6 +1853,7 @@ namespace Content.Client.Lobby.UI
             UpdateHeightWidthSliders();
             UpdateWeight();
             // end Goobstation: port EE height/width sliders
+            RefreshTraits(); // Goobstation: ported from DeltaV - Species trait exclusion
         }
 
         private void SetName(string newName)
@@ -2081,7 +2103,7 @@ namespace Content.Client.Lobby.UI
             SpawnPriorityButton.SelectId((int) Profile.SpawnPriority);
         }
 
-        // begin Goobstation: port EE height/width sliders // CorvaxGoob-Clearing
+        // begin Goobstation: port EE height/width sliders
         private void UpdateHeightWidthSliders()
         {
             if (Profile is null)
