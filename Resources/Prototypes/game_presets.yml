@@ -10,8 +10,8 @@
   rules:
     - MeteorSwarmScheduler
     - RampingStationEventScheduler
-    - SpaceTrafficControlEventScheduler
-    - SpaceTrafficControlFriendlyEventScheduler
+    #- SpaceTrafficControlEventScheduler
+    #- SpaceTrafficControlFriendlyEventScheduler
     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -26,7 +26,7 @@
   rules:
     - KesslerSyndromeScheduler
     - RampingStationEventScheduler
-    - SpaceTrafficControlEventScheduler
+    #- SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -37,21 +37,18 @@
   description: all-at-once-description
   showInVote: false
   rules:
-    - Nukeops
-    - Traitor
+   # - Nukeops
+   # - Traitor
     - Revolutionary
     - Zombie
-    - Wizard
-    - CosmicCult # DeltaV
-    - Xenoborgs
-    - Thief
-    - Heretic # Goob
-    - BlobGameMode # Goob
-    - LoneAbductorSpawn # Goob
+   # - Thief
+    - Heretic
+    - BlobGameMode
+    - LoneAbductorSpawn
     - KesslerSyndromeScheduler
     - RampingStationEventScheduler
     - Changeling # Goobstation - changeling playtest
-    - SpaceTrafficControlEventScheduler
+    #- SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -80,8 +77,8 @@
     - MeteorSwarmMildScheduler # Goob Edit
     - MeteorSwarmScheduler # Goob edit
     - RampingStationEventScheduler
-    - SpaceTrafficControlEventScheduler
-    - SpaceTrafficControlFriendlyEventScheduler
+    #- SpaceTrafficControlEventScheduler
+    #- SpaceTrafficControlFriendlyEventScheduler
     - BasicRoundstartVariation
     - Changeling # Goobstation - changeling playtest
     - Shadowling # Einstein Engines - Shadowlings
@@ -97,7 +94,7 @@
   rules:
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+  #- SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -109,7 +106,7 @@
   showInVote: true #4boring4vote
   description: greenshift-description
   rules:
-  - SpaceTrafficControlFriendlyEventScheduler
+  #- SpaceTrafficControlFriendlyEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -142,6 +139,30 @@
     # - BasicStationEventScheduler CorvaxGoob : Fixes double spawn BasicStationEventScheduler
 
 - type: gamePreset
+  id: SecretExtended #For Admin Use: Runs Extended but shows "Secret" in lobby.
+  alias:
+    - secretextended
+  name: secret-title
+  showInVote: false #Admin Use
+  description: secret-description
+  rules:
+    - BasicStationEventScheduler
+    - MeteorSwarmScheduler
+    #- SpaceTrafficControlEventScheduler
+    - BasicRoundstartVariation
+
+- type: gamePreset
+  id: SecretGreenshift #For Admin Use: Runs Greenshift but shows "Secret" in lobby.
+  alias:
+  - secretgreenshift
+  name: secret-title
+  showInVote: false #Admin Use
+  description: secret-description
+  rules:
+  #- SpaceTrafficControlFriendlyEventScheduler
+  - BasicRoundstartVariation
+
+- type: gamePreset
   id: Sandbox
   alias:
     - sandbox
@@ -166,7 +187,7 @@
   #- SubGamemodesRuleNoWizard # Goob
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+  #- SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -195,7 +216,7 @@
   # - SubGamemodesRuleNoWizard Goob
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+  #- SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -229,7 +250,7 @@
   - SubGamemodesRuleNoWizardNoXenoborg # no two motherships
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+  #- SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -247,7 +268,7 @@
   - Zombie
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
-  - SpaceTrafficControlEventScheduler
+  #- SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -263,5 +284,5 @@
   - Zombie
   - BasicStationEventScheduler
   - KesslerSyndromeScheduler
-  - SpaceTrafficControlEventScheduler
+  #- SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
