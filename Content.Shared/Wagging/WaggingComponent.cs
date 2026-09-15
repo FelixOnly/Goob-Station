@@ -8,23 +8,25 @@ namespace Content.Shared.Wagging;
 /// <summary>
 /// An emoting wag for markings.
 /// </summary>
-[RegisterComponent, NetworkedComponent]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState(fieldDeltas: true)]
+[Access(typeof(WaggingSystem))]
 public sealed partial class WaggingComponent : Component
 {
-    [DataField]
+    [DataField, AutoNetworkedField]
     public EntProtoId Action = "ActionToggleWagging";
 
-    [DataField]
+    [DataField, AutoNetworkedField]
     public EntityUid? ActionEntity;
 
     /// <summary>
     /// Suffix to add to get the animated marking.
     /// </summary>
+    [DataField, AutoNetworkedField]
     public string Suffix = "Animated";
 
     /// <summary>
     /// Is the entity currently wagging.
     /// </summary>
-    [DataField]
+    [DataField, AutoNetworkedField]
     public bool Wagging = false;
 }
