@@ -78,8 +78,8 @@
         acts: [ "Destruction" ]
   - type: Edible
     solution: food
-    delay: 1
-    forceFeedDelay: 1
+    delay: 10 # Wormix
+    forceFeedDelay: 15 # Wormix
   - type: FlavorProfile
     flavors:
     - paper
