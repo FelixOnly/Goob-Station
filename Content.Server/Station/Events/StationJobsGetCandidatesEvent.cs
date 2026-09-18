@@ -8,4 +8,4 @@ using Robust.Shared.Prototypes;
 namespace Content.Server.Station.Events;
 
 [ByRefEvent]
-public readonly record struct StationJobsGetCandidatesEvent(NetUserId Player, List<ProtoId<JobPrototype>> Jobs, List<CharacterWhitelistRoleWithUser> CharactersAllow, List<CharacterWhitelistRoleWithUser> CharactersDeny ); // Wormix
+public readonly record struct StationJobsGetCandidatesEvent(NetUserId Player, List<ProtoId<JobPrototype>> Jobs, List<CharacterWhitelistRoleWithUser> ProfilesRestrictions ); // Wormix
