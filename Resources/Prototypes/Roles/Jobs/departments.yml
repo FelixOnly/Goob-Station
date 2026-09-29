@@ -5,6 +5,9 @@
   name: department-Cargo
   description: department-Cargo-description
   color: "#A46106"
+  # Europa-Start
+  buttonStyle: ButtonColorCargoDepartment
+  # Europa-End
   roles:
   - CargoTechnician
   - Quartermaster
@@ -17,6 +20,9 @@
   description: department-Civilian-description
   color: "#9FED58"
   weight: -10
+  # Europa-Start
+  buttonStyle: ButtonColorCivilianDepartment
+  # Europa-End
   roles:
   - Bartender
   - Botanist
@@ -40,6 +46,9 @@
   name: department-CentralCommand
   description: department-CentralCommand-description
   color: "#0c344d"
+  # Europa-Start
+  buttonStyle: ButtonColorCentralCommandDepartment
+  # Europa-End
   roles:
   - CentralCommandOfficial
   - CBURN
@@ -68,6 +77,9 @@
   name: department-Command
   description: department-Command-description
   color: "#334E6D"
+  # Europa-Start
+  buttonStyle: ButtonColorCommandDepartment
+  # Europa-End
   roles:
   - Captain
   - ChiefEngineer
@@ -98,6 +110,9 @@
   name: department-Engineering
   description: department-Engineering-description
   color: "#EFB341"
+  # Europa-Start
+  buttonStyle: ButtonColorEngineeringDepartment
+  # Europa-End
   roles:
   - AtmosphericTechnician
   - ChiefEngineer
@@ -109,6 +124,9 @@
   name: department-Medical
   description: department-Medical-description
   color: "#52B4E9"
+  # Europa-Start
+  buttonStyle: ButtonColorMedicalDepartment
+  # Europa-End
   roles:
   - Chemist
   - ChiefMedicalOfficer
@@ -124,6 +142,9 @@
   name: department-Security
   description: department-Security-description
   color: "#DE3A3A"
+  # Europa-Start
+  buttonStyle: ButtonColorSecurityDepartment
+  # Europa-End
   weight: 20
   roles:
   - HeadOfSecurity
@@ -141,6 +162,9 @@
   name: department-Science
   description: department-Science-description
   color: "#D381C9"
+  # Europa-Start
+  buttonStyle: ButtonColorScienceDepartment
+  # Europa-End
   roles:
   - ResearchDirector
   - Scientist
@@ -152,6 +176,9 @@
   name: department-Silicon
   description: department-Silicon-description
   color: "#D381C9"
+  # Europa-Start
+  buttonStyle: ButtonColorSiliconDepartment
+  # Europa-End
   roles:
   - Borg
   - StationAi
@@ -161,6 +188,9 @@
   name: department-Specific
   description: department-Specific-description
   color: "#9FED58"
+  # Europa-Start
+  buttonStyle: ButtonColorSpecificDepartment
+  # Europa-End
   weight: 10
   roles:
   - RadioHost # Goobstation
