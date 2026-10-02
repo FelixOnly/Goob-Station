@@ -1452,6 +1452,7 @@
   - SecurityBeret
   - SecurityHat
   - TrooperHat
+  - SideCap
 
 - type: loadoutGroup
   id: SecurityJumpsuit
