@@ -21,8 +21,22 @@ public sealed partial class JudoDiscombobulatePerformedEvent : EntityEventArgs
     public EntProtoId StatusEffectProto = "StatusEffectStaminaResistanceModifier";
 }
 
+// Wormix Edit Start
+
 [Serializable, NetSerializable, DataDefinition]
-public sealed partial class JudoEyePokePerformedEvent : EntityEventArgs;
+public sealed partial class JudoEyePokePerformedEvent : EntityEventArgs
+{
+    [DataField]
+    public float AttackSpeedMultiplier = 2f;
+
+    [DataField]
+    public float DamageMultiplier = 0.1f;
+
+    [DataField]
+    public TimeSpan AttackSpeedMultiplierTime = TimeSpan.FromSeconds(2);
+}
+
+// Wormix EDIT End
 
 [Serializable, NetSerializable, DataDefinition]
 public sealed partial class JudoThrowPerformedEvent : EntityEventArgs;
@@ -35,3 +49,10 @@ public sealed partial class JudoWheelThrowPerformedEvent : EntityEventArgs;
 
 [Serializable, NetSerializable, DataDefinition]
 public sealed partial class JudoGoldenBlastPerformedEvent : EntityEventArgs;
+
+// Wormix EDIT Start
+
+[Serializable, NetSerializable, DataDefinition]
+public sealed partial class JudoDisarmingPerformedEvent : EntityEventArgs;
+
+// Wormix EDIT End
