@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Server._CorvaxGoob.TTS;
+using Content.Server._RMC14.LinkAccount;
 using Content.Server._Wormix.Players;
 // using Content.Server._RMC14.LinkAccount; // RMC - Patreon
 using Content.Server.Administration;
@@ -84,10 +85,10 @@ internal static class ServerContentIoC
         deps.Register<ConnectionManager>();
         deps.Register<MultiServerKickManager>();
         deps.Register<CVarControlManager>();
-        deps.Register<DiscordLink>();
-        deps.Register<DiscordChatLink>();
+        //deps.Register<DiscordLink>();
+        //deps.Register<DiscordChatLink>();
         //deps.Register<LastRolledAntagManager>(); // Goobstation - antag pity CorvaxGoob-Deleted
-        //deps.Register<LinkAccountManager>(); // RMC - Patreon; Deleted by CorvaxGoob
+        deps.Register<LinkAccountManager>(); // RMC - Patreon
         IoCManager.Register<TTSManager>(); // CorvaxGoob-TTS
         IoCManager.Register<JobCharacterWhitelistManager>(); // Wormix
     }

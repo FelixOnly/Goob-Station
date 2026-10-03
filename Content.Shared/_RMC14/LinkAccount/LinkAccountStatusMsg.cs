@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-/* CorvaxGoob-Coins-start
 using System.IO;
 using Lidgren.Network;
 using Robust.Shared.Network;
@@ -46,4 +45,3 @@ public sealed class LinkAccountStatusMsg : NetMessage
         }
     }
 }
-CorvaxGoob-Coins-end */

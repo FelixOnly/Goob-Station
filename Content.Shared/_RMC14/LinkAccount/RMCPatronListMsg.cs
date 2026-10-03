@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-/* CorvaxGoob-Coins-start
 using Lidgren.Network;
 using Robust.Shared.Network;
 using Robust.Shared.Serialization;
@@ -35,4 +34,3 @@ public sealed class RMCPatronListMsg : NetMessage
         }
     }
 }
-CorvaxGoob-Coins-end */
