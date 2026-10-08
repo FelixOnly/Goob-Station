@@ -7,7 +7,6 @@ using Content.Server.DeviceNetwork.Systems;
 using Content.Shared.PowerCell;
 using Content.Server.Jittering;
 using Content.Server.Power.EntitySystems;
-using Content.Server.PowerCell;
 using Content.Shared.Bed.Components;
 using Content.Shared.DeviceNetwork;
 using Content.Shared.DeviceNetwork.Events;

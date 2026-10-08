@@ -86,11 +86,12 @@ namespace Content.Client.UserInterface.Systems.Ghost.Controls
 
         public void UpdateWarps(List<GhostWarpPlayer> players, List<GhostWarpPlace> places, List<GhostWarpGlobalAntagonist> antagonists) // Europa-Edit | Populate > UpdateWarps
         {
-            ButtonContainer.RemoveAllChildren();
-/* // Europa-Remove
+            /* // Europa-Remove
             ButtonContainer.DisposeAllChildren();
             AddButtons();
-*/
+            */
+
+
             // Europa-Start
             _originalPlayerWarps = players.ToList();
             _originalPlaceWarps = places.ToList();

@@ -277,28 +277,32 @@ public class StaticSpriteView : Control
         };
         var stretch = MathF.Min(stretchVec.X, stretchVec.Y);
 
-        var offset = SpriteOffset
-            ? Vector2.Zero
-            : - (-_eyeRotation).RotateVec(_cachedSprite.Offset * _scale) * new Vector2(1, -1) * EyeManager.PixelsPerMeter;
+        // Wormix fix
+        if (_cachedSprite != null)
+        {
+            var offset = SpriteOffset
+                ? Vector2.Zero
+                : - (-_eyeRotation).RotateVec(_cachedSprite.Offset * _scale) * new Vector2(1, -1) * EyeManager.PixelsPerMeter;
 
-        var position = PixelSize / 2 + offset * stretch * UIScale;
-        var scale = Scale * UIScale * stretch;
+            var position = PixelSize / 2 + offset * stretch * UIScale;
+            var scale = Scale * UIScale * stretch;
 
-        var world = renderHandle.DrawingHandleWorld;
-        var oldModulate = world.Modulate;
-        world.Modulate *= Modulate * ActualModulateSelf;
+            var world = renderHandle.DrawingHandleWorld;
+            var oldModulate = world.Modulate;
+            world.Modulate *= Modulate * ActualModulateSelf;
 
-        renderHandle.DrawEntity(
-            ent,
-            position,
-            scale,
-            _cachedWorldRotation, // Используем сохраненный поворот
-            _eyeRotation,
-            OverrideDirection,
-            ent.Comp
-        );
+            renderHandle.DrawEntity(
+                ent,
+                position,
+                scale,
+                _cachedWorldRotation, // Используем сохраненный поворот
+                _eyeRotation,
+                OverrideDirection,
+                ent.Comp
+            );
 
-        world.Modulate = oldModulate;
+            world.Modulate = oldModulate;
+        }
     }
 
     private Entity<SpriteComponent>? ResolveEntity()

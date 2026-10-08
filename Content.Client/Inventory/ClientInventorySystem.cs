@@ -145,6 +145,17 @@ namespace Content.Client.Inventory
             }
         }
 
+        public bool TryAddSlotDef(EntityUid owner, InventorySlotsComponent component, SlotDefinition newSlotDef)
+        {
+            SlotData newSlotData = newSlotDef; //convert to slotData
+            if (!component.SlotData.TryAdd(newSlotDef.Name, newSlotData))
+                return false;
+
+            if (owner == _playerManager.LocalEntity)
+                OnSlotAdded?.Invoke(newSlotData);
+            return true;
+        }
+
         public void ReloadInventory(InventorySlotsComponent? component = null)
         {
             var player = _playerManager.LocalEntity;

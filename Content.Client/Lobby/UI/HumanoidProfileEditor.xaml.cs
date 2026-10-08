@@ -802,13 +802,15 @@ namespace Content.Client.Lobby.UI
 
         private void CreateLinkButton(string url, BoxContainer linksContainer)
         {
+            var styleClass = StyleClass.ButtonOpenBoth;
+
             var button = new Button
             {
                 Text = GetLinkDisplayText(url),
                 ToolTip = Loc.GetString("humanoid-profile-editor-link-tooltip", ("url", url)),
                 HorizontalExpand = true,
                 HorizontalAlignment = HAlignment.Center,
-                StyleClasses = { StyleBase.ButtonOpenBoth },
+                StyleClasses = { styleClass },
             };
 
             button.OnPressed += _ => OpenLink(url);
@@ -2422,51 +2424,6 @@ namespace Content.Client.Lobby.UI
             _exporting = false;
             ImportButton.Disabled = false;
             ExportButton.Disabled = false;
-        }
-
-        private void OnSkinColorOnValueChangedKeepColor(HumanoidCharacterProfile previous)
-        {
-            if (Profile is null) return;
-
-            var skin = _prototypeManager.Index<SpeciesPrototype>(Profile.Species).SkinColoration;
-            var color = previous.Appearance.SkinColor;
-
-            switch (skin)
-            {
-                case HumanoidSkinColor.HumanToned:
-                        var tone = SkinColor.HumanSkinToneFromColor(previous.Appearance.SkinColor);
-                        color = SkinColor.HumanSkinTone((int)tone);
-                        Skin.Value = tone;
-
-                        Profile = Profile.WithCharacterAppearance(Profile.Appearance.WithSkinColor(color));//
-                        break;
-                case HumanoidSkinColor.Hues:
-                        break;
-                case HumanoidSkinColor.TintedHues:
-                        color = SkinColor.TintedHues(previous.Appearance.SkinColor);
-
-                        Profile = Profile.WithCharacterAppearance(Profile.Appearance.WithSkinColor(color));
-                        break;
-                case HumanoidSkinColor.VoxFeathers:
-                        color = SkinColor.ClosestVoxColor(previous.Appearance.SkinColor);
-
-                        Profile = Profile.WithCharacterAppearance(Profile.Appearance.WithSkinColor(color));
-                        break;
-                case HumanoidSkinColor.NoColor:
-                        color = Color.White;
-
-                        Profile = Profile.WithCharacterAppearance(Profile.Appearance.WithSkinColor(color));
-                        break;
-                case HumanoidSkinColor.AnimalFur:
-                        color = SkinColor.ClosestAnimalFurColor(previous.Appearance.SkinColor);
-
-                        Profile = Profile.WithCharacterAppearance(Profile.Appearance.WithSkinColor(color));
-                        break;
-            }
-
-            _rgbSkinColorSelector.Color = color;
-
-            ReloadProfilePreview();
         }
 
         private static void SetFlavorPreviewMarkup(RichTextLabel label, string content)

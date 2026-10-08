@@ -6,122 +6,122 @@
   minLimit: 0
   maxLimit: 4
   loadouts:
-  - FlowerWreath
-  - Hairflower
-  - Headphones
-  - PlushieLizard
-  - PlushieSpaceLizard
-  - PersonalAI # Goobstation
-  - GoldenPersonalAI # Goobstation
-  - CrewCassette # Goobstation
-  - HandheldStationMap # CorvaxGoob-loadouts
-  - ThreeCandles
-  - Lighter
-  - FlippoLighter # CorvaxGoob-loadouts
-  - Matchbox # Wormix-Edit
-  - CigPackGreen
-  - CigPackRed
-  - CigPackBlue
-  - CigPackBlack
-  - CigarCase
-  - CigarGold
-  - BoxFolderBaseThreePapers
-  - BoxFolderPlasticClipboardThreePapers
-  - BoxFolderClipboardThreePapers
-  - ClothingNeckLGBTPin
-  - ClothingNeckAllyPin
-  - ClothingNeckAromanticPin
-  - ClothingNeckAsexualPin
-  - ClothingNeckAroacePin
-  - ClothingNeckBisexualPin
-  - ClothingNeckGayPin
-  - ClothingNeckIntersexPin
-  - ClothingNeckLesbianPin
-  - ClothingNeckNonBinaryPin
-  - ClothingNeckPansexualPin
-  - ClothingNeckPluralPin
-  - ClothingNeckOmnisexualPin
-  - ClothingNeckGenderqueerPin
-  - ClothingNeckGenderfluidPin
-  - ClothingNeckTransPin
-  - ClothingNeckAutismPin
-  - ClothingNeckGoldAutismPin
-  - OffsetCane
-  - OffsetCaneWood
-  - OffsetCaneClown
-  - OffsetCaneMime
-  - OffsetCaneNT
-  - Cane
-  - TowelColorWhite
-  - TowelColorGray
-  # GoobStation Start
-  - CardBoxBlack
-  - CardBoxNanotrasen
-  - FoodSnackLollypopWrapped
-  - FoodSnackLollypopWrappedRainbow
-  - FoodSnackLollypopWrappedCarp
-  # Goobstation End
-  - FoodSnackLollypopWrappedTricordrazine # CorvaxGoob-loadouts
-  - # Wormix-Start
-  - BoxFolderClipboard
-  - LuxuryPen
-  - DrinkMugMetal
-  - DrinkMug
-  - DrinkMugRed
-  - DrinkMugGreen
-  - DrinkMugBlue
-  - DrinkMugBlack
-  - DrinkMugOne
-  - DrinkMugHeart
-  - DrinkMugDog
-  - DrinkMugMoebius
-  - DrinkMugRainbow
-  - DrinkVacuumFlask
-  - BarberScissors
-  - Whistle
-  - Basketball
-  - Football
-  - TennisBall
-  - boomerang
-  - ClothingBackpackDuffelTennisGame
-  - Accordion
-  - AcousticGuitar
-  - Flute
-  - Harmonica
-  - PhotoCamera
-  # Wormix-End
-  - TowelColorBlack
-  - TowelColorRed
-  - TowelColorOrange
-  - TowelColorLightBrown
-  - TowelColorYellow
-  - TowelColorDarkGreen
-  - TowelColorGreen
-  - TowelColorLightBlue
-  - TowelColorDarkBlue
-  - TowelColorPurple
-  - TowelColorMaroon
-  - TowelColorMime
-  - TowelColorSilver
-  - TowelColorGold
-  # CorvaxGoob-Loadouts-Start
-  - ClothingNeckAtharaPin
-  - ClothingNeckCorvaxPin
-  - ClothingNeckEchoPin
-  - ClothingNeckElysiumPin
-  - ClothingNeckMainPin
-  - ClothingNeckNebulaPin
-  - ClothingNeckNovaPin
-  - ClothingNeckSolarisPin
-  - ClothingNeckWhiteListPin
-  # CorvaxGoob-Loadouts-End
-  # Begin DeltaV Additions
-  - GoldRing
-  - SilverRing
-  - Cane
-  - WhiteCane
-  - TapeRecorder
-  - DrinkOniGourd
+    - FlowerWreath
+    - Hairflower
+    - Headphones
+    - PlushieLizard
+    - PlushieSpaceLizard
+    - PersonalAI # Goobstation
+    - GoldenPersonalAI # Goobstation
+    - CrewCassette # Goobstation
+    - HandheldStationMap # CorvaxGoob-loadouts
+    - ThreeCandles
+    - Lighter
+    - FlippoLighter # CorvaxGoob-loadouts
+    - CigPackGreen
+    - CigPackRed
+    - CigPackBlue
+    - CigPackBlack
+    - CigarCase
+    - CigarGold
+    - BoxFolderBaseThreePapers
+    - BoxFolderPlasticClipboardThreePapers
+    - BoxFolderClipboardThreePapers
+    - ClothingNeckLGBTPin
+    - ClothingNeckAllyPin
+    - ClothingNeckAromanticPin
+    - ClothingNeckAsexualPin
+    - ClothingNeckAroacePin
+    - ClothingNeckBisexualPin
+    - ClothingNeckGayPin
+    - ClothingNeckIntersexPin
+    - ClothingNeckLesbianPin
+    - ClothingNeckNonBinaryPin
+    - ClothingNeckPansexualPin
+    - ClothingNeckPluralPin
+    - ClothingNeckOmnisexualPin
+    - ClothingNeckGenderqueerPin
+    - ClothingNeckGenderfluidPin
+    - ClothingNeckTransPin
+    - ClothingNeckAutismPin
+    - ClothingNeckGoldAutismPin
+    - OffsetCane
+    - OffsetCaneWood
+    - OffsetCaneClown
+    - OffsetCaneMime
+    - OffsetCaneNT
+    - Cane
+    - TowelColorWhite
+    - TowelColorGray
+    # GoobStation Start
+    - CardBoxBlack
+    - CardBoxNanotrasen
+    - FoodSnackLollypopWrapped
+    - FoodSnackLollypopWrappedRainbow
+    - FoodSnackLollypopWrappedCarp
+    # Goobstation End
+    - FoodSnackLollypopWrappedTricordrazine # CorvaxGoob-loadouts
+    -  # Wormix-Start
+    - Matchbox
+    - BoxFolderClipboard
+    - LuxuryPen
+    - DrinkMugMetal
+    - DrinkMug
+    - DrinkMugRed
+    - DrinkMugGreen
+    - DrinkMugBlue
+    - DrinkMugBlack
+    - DrinkMugOne
+    - DrinkMugHeart
+    - DrinkMugDog
+    - DrinkMugMoebius
+    - DrinkMugRainbow
+    - DrinkVacuumFlask
+    - BarberScissors
+    - Whistle
+    - Basketball
+    - Football
+    - TennisBall
+    - boomerang
+    - ClothingBackpackDuffelTennisGame
+    - Accordion
+    - AcousticGuitar
+    - Flute
+    - Harmonica
+    - PhotoCamera
+    # Wormix-End
+    - TowelColorBlack
+    - TowelColorRed
+    - TowelColorOrange
+    - TowelColorLightBrown
+    - TowelColorYellow
+    - TowelColorDarkGreen
+    - TowelColorGreen
+    - TowelColorLightBlue
+    - TowelColorDarkBlue
+    - TowelColorPurple
+    - TowelColorMaroon
+    - TowelColorMime
+    - TowelColorSilver
+    - TowelColorGold
+    # CorvaxGoob-Loadouts-Start
+    - ClothingNeckAtharaPin
+    - ClothingNeckCorvaxPin
+    - ClothingNeckEchoPin
+    - ClothingNeckElysiumPin
+    - ClothingNeckMainPin
+    - ClothingNeckNebulaPin
+    - ClothingNeckNovaPin
+    - ClothingNeckSolarisPin
+    - ClothingNeckWhiteListPin
+    # CorvaxGoob-Loadouts-End
+    # Begin DeltaV Additions
+    - GoldRing
+    - SilverRing
+    - Cane
+    - WhiteCane
+    - TapeRecorder
+    - DrinkOniGourd
   # End DeltaV Additions
 
 - type: loadoutGroup
@@ -129,27 +129,27 @@
   name: loadout-group-glasses
   minLimit: 0
   loadouts:
-  - Glasses
-  - CheapSunglasses # Goobstation
-  - GlassesJamjar
-  - GlassesJensen
+    - Glasses
+    - CheapSunglasses # Goobstation
+    - GlassesJamjar
+    - GlassesJensen
 
 - type: loadoutGroup
-  id: Animals  # Goobstation
+  id: Animals # Goobstation
   name: loadout-group-animals
   minLimit: 0
   maxLimit: 1
   loadouts:
-  - Squackroach
-  - Mouse
-  - Mothroach
-  - Goldfish
-  - BeePack # Wormix
-  # CorvaxGoob-loadouts-start
-  - Cockroach
-  - Butterfly
-  - Hamster
-  - Moproach
+    - Squackroach
+    - Mouse
+    - Mothroach
+    - Goldfish
+    - BeePack # Wormix
+    # CorvaxGoob-loadouts-start
+    - Cockroach
+    - Butterfly
+    - Hamster
+    - Moproach
   # CorvaxGoob-loadouts-end
 
 - type: loadoutGroup
@@ -158,7 +158,7 @@
   minLimit: 1
   hidden: true
   loadouts:
-  - LoadoutTankHarness
+    - LoadoutTankHarness
 
 - type: loadoutGroup
   id: Survival
@@ -166,14 +166,14 @@
   minLimit: 3
   hidden: true
   loadouts:
-  - EmergencyNitrogen
-  - EmergencyOxygen
-  - EmergencyPlasma
-  - LoadoutSpeciesVoxNitrogen
-  - LoadoutSpeciesPlasma # Goobstation
-  - EmergencyWaterVapor # Delta-V
-  - EmergencySilicon
-  - LoadoutSpeciesAbductorTranslator # CorvaxGoob-Species
+    - EmergencyNitrogen
+    - EmergencyOxygen
+    - EmergencyPlasma
+    - LoadoutSpeciesVoxNitrogen
+    - LoadoutSpeciesPlasma # Goobstation
+    - EmergencyWaterVapor # Delta-V
+    - EmergencySilicon
+    - LoadoutSpeciesAbductorTranslator # CorvaxGoob-Species
 
 # nitrogen or oxygen tank, depending on what your species needs
 - type: loadoutGroup
@@ -181,9 +181,9 @@
   name: loadout-group-EVA-tank
   hidden: true
   loadouts:
-  - LoadoutSpeciesEVANitrogen
-  - LoadoutSpeciesEVAOxygen
-  - LoadoutSpeciesEVAWaterVapor
+    - LoadoutSpeciesEVANitrogen
+    - LoadoutSpeciesEVAOxygen
+    - LoadoutSpeciesEVAWaterVapor
 
 # vox get a nitrogen tank, other species get nothing
 - type: loadoutGroup
@@ -191,16 +191,16 @@
   name: loadout-group-vox-tank
   hidden: true
   loadouts:
-  - LoadoutSpeciesVoxNitrogen
+    - LoadoutSpeciesVoxNitrogen
 
 - type: loadoutGroup
   id: GroupPocketTankDouble
   name: loadout-group-pocket-tank-double
   hidden: true
   loadouts:
-  - LoadoutSpeciesPocketDoubleNitrogen
-  - LoadoutSpeciesPocketDoubleOxygen
-  - LoadoutSpeciesPocketDoubleWaterVapor
+    - LoadoutSpeciesPocketDoubleNitrogen
+    - LoadoutSpeciesPocketDoubleOxygen
+    - LoadoutSpeciesPocketDoubleWaterVapor
 
 # Command
 - type: loadoutGroup
@@ -208,517 +208,517 @@
   name: loadout-group-captain-head
   minLimit: 0
   loadouts:
-  - CaptainHead
-  - CaptainCap
-  - CaptainCapcapSenior # goob
+    - CaptainHead
+    - CaptainCap
+    - CaptainCapcapSenior # goob
 
 - type: loadoutGroup
   id: CaptainJumpsuit
   name: loadout-group-captain-jumpsuit
   loadouts:
-  - CaptainJumpsuit
-  - CaptainJumpskirt
-  - CaptainFormalSuit
-  - CaptainFormalSkirt
-  - CaptainJumpsuitMilitary # goob
-  # CorvaxGoob-Loadouts-Start
-  - CaptainJumpsuitTurtleneck
-  - CaptainJumpskirtTurtleneck
-  # CorvaxGoob-Loadouts-End
-  - CaptainSummerShirt # also goob
+    - CaptainJumpsuit
+    - CaptainJumpskirt
+    - CaptainFormalSuit
+    - CaptainFormalSkirt
+    - CaptainJumpsuitMilitary # goob
+    # CorvaxGoob-Loadouts-Start
+    - CaptainJumpsuitTurtleneck
+    - CaptainJumpskirtTurtleneck
+    # CorvaxGoob-Loadouts-End
+    - CaptainSummerShirt # also goob
 
 - type: loadoutGroup
   id: CaptainNeck
   name: loadout-group-captain-neck
   minLimit: 0
   loadouts:
-  - CaptainCloak
-  - CaptainCloakFormal
-  - CaptainMantle
-  - VeteranCaptainCloak # goob
-  - CaptainEnsemble # goob
+    - CaptainCloak
+    - CaptainCloakFormal
+    - CaptainMantle
+    - VeteranCaptainCloak # goob
+    - CaptainEnsemble # goob
 
 - type: loadoutGroup
   id: CaptainBackpack
   name: loadout-group-captain-backpack
   loadouts:
-  - CaptainBackpack
-  - CaptainSatchel
-  - CaptainDuffel
-  - CaptainMessenger # Frontier
+    - CaptainBackpack
+    - CaptainSatchel
+    - CaptainDuffel
+    - CaptainMessenger # Frontier
 
 - type: loadoutGroup
   id: CaptainOuterClothing
   name: loadout-group-captain-outerclothing
   loadouts:
-  - CaptainOuterClothing
-  - CaptainWintercoat
-  - CaptainJacket # Goobstation
-  - CaptainWintercoatUnarmored #Goobstation
+    - CaptainOuterClothing
+    - CaptainWintercoat
+    - CaptainJacket # Goobstation
+    - CaptainWintercoatUnarmored #Goobstation
 
 - type: loadoutGroup
   id: CaptainJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieCaptain
+    - LizardPlushieCaptain
 
 - type: loadoutGroup
   id: HoPHead
   name: loadout-group-hop-head
   minLimit: 0
   loadouts:
-  - HoPHead
+    - HoPHead
 
 - type: loadoutGroup
   id: HoPJumpsuit
   name: loadout-group-hop-jumpsuit
   loadouts:
-  - HoPJumpsuit
-  - HoPJumpskirt
-  - HoPJumpsuitMilitary # goob
-  # CorvaxGoob-Loadouts-Start
-  - HoPJumpsuitTurtleneck
-  - HoPJumpskirtTurtleneck
-  # CorvaxGoob-Loadouts-End
-  - HoPSummerShirt # goob
+    - HoPJumpsuit
+    - HoPJumpskirt
+    - HoPJumpsuitMilitary # goob
+    # CorvaxGoob-Loadouts-Start
+    - HoPJumpsuitTurtleneck
+    - HoPJumpskirtTurtleneck
+    # CorvaxGoob-Loadouts-End
+    - HoPSummerShirt # goob
 
 - type: loadoutGroup
   id: HoPNeck
   name: loadout-group-hop-neck
   minLimit: 0
   loadouts:
-  - HoPCloak
-  - HoPMantle
-  - HeadOfPersonnelEnsemble # goob
+    - HoPCloak
+    - HoPMantle
+    - HeadOfPersonnelEnsemble # goob
 
 - type: loadoutGroup
   id: HoPBackpack
   name: loadout-group-hop-backpack
   loadouts:
-  - CommonBackpack
-  - CommonSatchel
-  - CommonDuffel
-  - CommonMessenger # Frontier
-  - HoPBackpackIan
+    - CommonBackpack
+    - CommonSatchel
+    - CommonDuffel
+    - CommonMessenger # Frontier
+    - HoPBackpackIan
 
 - type: loadoutGroup
   id: HoPOuterClothing
   name: loadout-group-hop-outerclothing
   minLimit: 0
   loadouts:
-  - HoPWintercoat
-  - HoPLongcoat #goob
+    - HoPWintercoat
+    - HoPLongcoat #goob
 
 - type: loadoutGroup
   id: HoPJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieHeadOfPersonnel
+    - LizardPlushieHeadOfPersonnel
 
 # Civilian
 - type: loadoutGroup
   id: PassengerJumpsuit
   name: loadout-group-passenger-jumpsuit
   loadouts:
-  - GreyJumpsuit
-  - GreyJumpskirt
-  - AncientJumpsuit
-  - RainbowJumpsuit
-  - RainbowJumpskirt
- # goob changes start
-  - JumpsuitRecruit
-  - OverallsJumpsuit
-  - GreyMJ
-  - BlackMJ
-  - BlueMJ
-  - DarkBlueMJ
-  - TealMJ
-  - GreenMJ
-  - DarkGreenMJ
-  - OrangeMJ
-  - PinkMJ
-  - RedMJ
-  - YellowMJ
-  - PurpleMJ
-  - LightBrownMJ
-  - BrownMJ
-  - MaroonMJ
-  - QuarterzipJumpsuit
-  - ContractorJumpsuit
-  - ContractorJumpsuitTac
-  - BlackMJAlt
- # goob changes end
+    - GreyJumpsuit
+    - GreyJumpskirt
+    - AncientJumpsuit
+    - RainbowJumpsuit
+    - RainbowJumpskirt
+    # goob changes start
+    - JumpsuitRecruit
+    - OverallsJumpsuit
+    - GreyMJ
+    - BlackMJ
+    - BlueMJ
+    - DarkBlueMJ
+    - TealMJ
+    - GreenMJ
+    - DarkGreenMJ
+    - OrangeMJ
+    - PinkMJ
+    - RedMJ
+    - YellowMJ
+    - PurpleMJ
+    - LightBrownMJ
+    - BrownMJ
+    - MaroonMJ
+    - QuarterzipJumpsuit
+    - ContractorJumpsuit
+    - ContractorJumpsuitTac
+    - BlackMJAlt
+  # goob changes end
 
 - type: loadoutGroup
   id: PassengerFace
   name: loadout-group-passenger-mask
   minLimit: 0
   loadouts:
-  - PassengerFace
+    - PassengerFace
 
 - type: loadoutGroup
   id: PassengerGloves
   name: loadout-group-passenger-gloves
   minLimit: 0
   loadouts:
-  - PassengerGloves
+    - PassengerGloves
 
 - type: loadoutGroup
   id: CommonBackpack
   name: loadout-group-backpack
   loadouts:
-  - CommonBackpack
-  - CommonSatchel
-  - CommonDuffel
-  - CommonMessenger # Frontier
+    - CommonBackpack
+    - CommonSatchel
+    - CommonDuffel
+    - CommonMessenger # Frontier
 
 - type: loadoutGroup
   id: PassengerNeck
   name: loadout-group-passenger-neck
   minLimit: 0
   loadouts:
-  - Mantle
-  - OldNeckWrap # EE
+    - Mantle
+    - OldNeckWrap # EE
 
 - type: loadoutGroup
   id: PassengerOuterClothing
   name: loadout-group-passenger-outerclothing
   minLimit: 0
   loadouts:
-  - PassengerWintercoat
+    - PassengerWintercoat
 
 - type: loadoutGroup
   id: PassengerShoes
   name: loadout-group-passenger-shoes
   loadouts:
-  - BlackShoes
-  - WinterBoots
+    - BlackShoes
+    - WinterBoots
 
 - type: loadoutGroup
   id: PassengerJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushiePassenger
+    - LizardPlushiePassenger
 
 - type: loadoutGroup
   id: BartenderHead
   name: loadout-group-bartender-head
   minLimit: 0
   loadouts:
-  - BartenderHead
-  - BartenderBowler
+    - BartenderHead
+    - BartenderBowler
 
 - type: loadoutGroup
   id: BartenderJumpsuit
   name: loadout-group-bartender-jumpsuit
   loadouts:
-  - BartenderJumpsuit
-  - BartenderJumpskirt
-  - BartenderJumpsuitPurple
-  - ServiceMJ # goob
+    - BartenderJumpsuit
+    - BartenderJumpskirt
+    - BartenderJumpsuitPurple
+    - ServiceMJ # goob
 
 - type: loadoutGroup
   id: BartenderOuterClothing
   name: loadout-group-bartender-outerclothing
   minLimit: 0
   loadouts:
-  - BartenderVest
-  - BartenderApron
-  - BartenderWintercoat
+    - BartenderVest
+    - BartenderApron
+    - BartenderWintercoat
 
 - type: loadoutGroup
   id: BartenderJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieBartender
-  - BartenderGoldenShaker
+    - LizardPlushieBartender
+    - BartenderGoldenShaker
 
 - type: loadoutGroup
   id: ServiceWorkerJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieServiceWorker
+    - LizardPlushieServiceWorker
 
 - type: loadoutGroup
   id: ChefHead
   name: loadout-group-chef-head
   minLimit: 0
   loadouts:
-  - ChefHead
+    - ChefHead
 
 - type: loadoutGroup
   id: ChefMask
   name: loadout-group-chef-mask
   minLimit: 0
   loadouts:
-  - ChefMask
+    - ChefMask
 
 - type: loadoutGroup
   id: ChefJumpsuit
   name: loadout-group-chef-jumpsuit
   loadouts:
-  - ChefJumpsuit
-  - ChefJumpskirt
-  - ServiceMJ # goob
+    - ChefJumpsuit
+    - ChefJumpskirt
+    - ServiceMJ # goob
 
 - type: loadoutGroup
   id: ChefOuterClothing
   name: loadout-group-chef-outerclothing
   minLimit: 0
   loadouts:
-  - ChefApron
-  - ChefJacket
-  - ChefWintercoat
+    - ChefApron
+    - ChefJacket
+    - ChefWintercoat
 
 - type: loadoutGroup
   id: ChefJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieChef
+    - LizardPlushieChef
 
 - type: loadoutGroup
   id: LibrarianJumpsuit
   name: loadout-group-librarian-jumpsuit
   loadouts:
-  - LibrarianJumpsuit
-  - LibrarianJumpskirt
-  - CuratorJumpsuit
-  - CuratorJumpskirt
-  - ServiceMJ # goob
+    - LibrarianJumpsuit
+    - LibrarianJumpskirt
+    - CuratorJumpsuit
+    - CuratorJumpskirt
+    - ServiceMJ # goob
 
 - type: loadoutGroup
   id: LibrarianJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieLibrarian
+    - LizardPlushieLibrarian
 
 - type: loadoutGroup
   id: LawyerJumpsuit
   name: loadout-group-lawyer-jumpsuit
   loadouts:
-  - LawyerJumpsuit
-  - LawyerJumpskirt
-  - LawyerJumpsuitBlue
-  - LawyerJumpskirtBlue
-  - LawyerJumpsuitPurple
-  - LawyerJumpskirtPurple
-  - LawyerJumpsuitRed
-  - LawyerJumpskirtRed
-  - LawyerJumpsuitGood
-  - LawyerJumpskirtGood
-  - ServiceMJ # goob
+    - LawyerJumpsuit
+    - LawyerJumpskirt
+    - LawyerJumpsuitBlue
+    - LawyerJumpskirtBlue
+    - LawyerJumpsuitPurple
+    - LawyerJumpskirtPurple
+    - LawyerJumpsuitRed
+    - LawyerJumpskirtRed
+    - LawyerJumpsuitGood
+    - LawyerJumpskirtGood
+    - ServiceMJ # goob
 
 - type: loadoutGroup
   id: LawyerNeck
   name: loadout-group-lawyer-neck
   minLimit: 0
   loadouts:
-  - LawyerNeck
+    - LawyerNeck
 
 - type: loadoutGroup
   id: LawyerJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieLawyer
+    - LizardPlushieLawyer
 
 - type: loadoutGroup
   id: ChaplainHead
   name: loadout-group-chaplain-head
   minLimit: 0
   loadouts:
-  - ChaplainHead
-  - ChaplainNunHood
-  - ChaplainPlagueHat
-  - ChaplainWitchHat
-  - ChaplainWitchHatAlt
+    - ChaplainHead
+    - ChaplainNunHood
+    - ChaplainPlagueHat
+    - ChaplainWitchHat
+    - ChaplainWitchHatAlt
 
 - type: loadoutGroup
   id: ChaplainMask
   name: loadout-group-chaplain-mask
   minLimit: 0
   loadouts:
-  - ChaplainMask
+    - ChaplainMask
 
 - type: loadoutGroup
   id: ChaplainJumpsuit
   name: loadout-group-chaplain-jumpsuit
   loadouts:
-  - ChaplainJumpsuit
-  - ChaplainJumpskirt
-  - ChaplainRobesLight
-  - ChaplainRobesDark
-  - ServiceMJ # goob
+    - ChaplainJumpsuit
+    - ChaplainJumpskirt
+    - ChaplainRobesLight
+    - ChaplainRobesDark
+    - ServiceMJ # goob
 
 - type: loadoutGroup
   id: ChaplainOuterClothing
   name: loadout-group-chaplain-outerclothing
   minLimit: 0
   loadouts:
-  - ChaplainPlagueSuit
-  - ChaplainNunRobe
-  - ChaplainBlackHoodie
-  - ChaplainHoodie
+    - ChaplainPlagueSuit
+    - ChaplainNunRobe
+    - ChaplainBlackHoodie
+    - ChaplainHoodie
 
 - type: loadoutGroup
   id: ChaplainNeck
   name: loadout-group-chaplain-neck
   minLimit: 0
   loadouts:
-  - ChaplainNeck
+    - ChaplainNeck
 
 - type: loadoutGroup
   id: ChaplainJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieChaplain
+    - LizardPlushieChaplain
 
 - type: loadoutGroup
   id: ChaplainBible
   name: loadout-group-chaplain-bible
   minLimit: 1
   loadouts:
-  - Bible
-  - BibleNanoTrasen
-  - BibleDruid
-  - BibleSatanic
-  - BibleTanakh
-  - BibleQuran
-  - BibleHonk
-  - BibleRatvar
-  - BibleNarsie
+    - Bible
+    - BibleNanoTrasen
+    - BibleDruid
+    - BibleSatanic
+    - BibleTanakh
+    - BibleQuran
+    - BibleHonk
+    - BibleRatvar
+    - BibleNarsie
 
 - type: loadoutGroup
   id: JanitorHead
   name: loadout-group-janitor-head
   minLimit: 0
   loadouts:
-  - JanitorHead
-  - JanitorHeadSenior # Goobstation
+    - JanitorHead
+    - JanitorHeadSenior # Goobstation
 
 - type: loadoutGroup
   id: JanitorJumpsuit
   name: loadout-group-janitor-jumpsuit
   loadouts:
-  - JanitorJumpsuit
-  - JanitorJumpskirt
-  - ServiceMJ # goob
+    - JanitorJumpsuit
+    - JanitorJumpskirt
+    - ServiceMJ # goob
 
 - type: loadoutGroup
   id: JanitorGloves
   name: loadout-group-janitor-gloves
   minLimit: 0
   loadouts:
-  - JanitorRubberGloves
-  - OrangeGloves
-  - PurpleGloves
+    - JanitorRubberGloves
+    - OrangeGloves
+    - PurpleGloves
 
 - type: loadoutGroup
   id: JanitorOuterClothing
   name: loadout-group-janitor-outerclothing
   minLimit: 0
   loadouts:
-  - JanitorWintercoat
+    - JanitorWintercoat
 
 - type: loadoutGroup
   id: JanitorJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieJanitor
-  - JanitorGoldenPlunger
+    - LizardPlushieJanitor
+    - JanitorGoldenPlunger
 
 - type: loadoutGroup
   id: BotanistHead
   name: loadout-group-botanist-head
   minLimit: 0
   loadouts:
-  - BotanistHead
-  - BotanistBandana
-  - BotanistBeret # Goobstation
+    - BotanistHead
+    - BotanistBandana
+    - BotanistBeret # Goobstation
 
 - type: loadoutGroup
   id: BotanistJumpsuit
   name: loadout-group-botanist-jumpsuit
   loadouts:
-  - BotanistJumpsuit
-  - BotanistJumpskirt
-  - BotanistOveralls
-  - ServiceMJ # goob
-  - HydroMJ # goob
+    - BotanistJumpsuit
+    - BotanistJumpskirt
+    - BotanistOveralls
+    - ServiceMJ # goob
+    - HydroMJ # goob
 
 - type: loadoutGroup
   id: BotanistBackpack
   name: loadout-group-botanist-backpack
   loadouts:
-  - BotanistBackpack
-  - BotanistSatchel
-  - BotanistDuffel
-  - BotanistMessenger # Frontier
+    - BotanistBackpack
+    - BotanistSatchel
+    - BotanistDuffel
+    - BotanistMessenger # Frontier
 
 - type: loadoutGroup
   id: BotanistOuterClothing
   name: loadout-group-botanist-outerclothing
   minLimit: 0
   loadouts:
-  - BotanistApron
-  - BotanistWintercoat
+    - BotanistApron
+    - BotanistWintercoat
 
 - type: loadoutGroup
   id: BotanistJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieBotanist
+    - LizardPlushieBotanist
 
 - type: loadoutGroup
   id: ClownHead
   name: loadout-group-clown-head
   minLimit: 0
   loadouts:
-  - JesterHat
-  - JesterAltHat
+    - JesterHat
+    - JesterAltHat
 
 - type: loadoutGroup
   id: ClownJumpsuit
   name: loadout-group-clown-jumpsuit
   loadouts:
-  - ClownSuit
-  - ClownSkirt
-  - JesterSuit
-  - JesterAltSuit
+    - ClownSuit
+    - ClownSkirt
+    - JesterSuit
+    - JesterAltSuit
 
 - type: loadoutGroup
   id: ClownBackpack
   name: loadout-group-clown-backpack
   loadouts:
-  - ClownBackpack
-  - ClownSatchel
-  - ClownDuffel
-  - ClownMessenger # Frontier
+    - ClownBackpack
+    - ClownSatchel
+    - ClownDuffel
+    - ClownMessenger # Frontier
 
 - type: loadoutGroup
   id: ClownOuterClothing
   name: loadout-group-clown-outerclothing
   minLimit: 0
   loadouts:
-  - ClownRobes
-  - ClownWintercoat
+    - ClownRobes
+    - ClownWintercoat
 
 - type: loadoutGroup
   id: ClownShoes
   name: loadout-group-clown-shoes
   loadouts:
-  - ClownShoes
-  - JesterShoes
+    - ClownShoes
+    - JesterShoes
 
 - type: loadoutGroup
   id: SurvivalClown
@@ -726,68 +726,68 @@
   minLimit: 2
   hidden: true
   loadouts:
-  - EmergencyNitrogenClown
-  - EmergencyOxygenClown
-  - EmergencyPlasmaClown
-  - LoadoutSpeciesVoxNitrogen
-  - LoadoutSpeciesPlasma # Goobstation
-  - EmergencyWaterVaporClown # Delta-V
-  - EmergencySilicon
+    - EmergencyNitrogenClown
+    - EmergencyOxygenClown
+    - EmergencyPlasmaClown
+    - LoadoutSpeciesVoxNitrogen
+    - LoadoutSpeciesPlasma # Goobstation
+    - EmergencyWaterVaporClown # Delta-V
+    - EmergencySilicon
 
 - type: loadoutGroup
   id: ClownJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieClown
-  - FlowerWaterClown
+    - LizardPlushieClown
+    - FlowerWaterClown
 
 - type: loadoutGroup
   id: MimeHead
   name: loadout-group-mime-head
   minLimit: 0
   loadouts:
-  - MimeHead
-  - MimeFrenchBeret
-  - MimeCap
+    - MimeHead
+    - MimeFrenchBeret
+    - MimeCap
 
 - type: loadoutGroup
   id: MimeMask
   name: loadout-group-mime-mask
   loadouts:
-  - MimeMask
-  - MimeMaskSad
-  - MimeMaskScared
+    - MimeMask
+    - MimeMaskSad
+    - MimeMaskScared
 
 - type: loadoutGroup
   id: MimeJumpsuit
   name: loadout-group-mime-jumpsuit
   loadouts:
-  - MimeJumpsuit
-  - MimeJumpskirt
+    - MimeJumpsuit
+    - MimeJumpskirt
 
 - type: loadoutGroup
   id: MimeBackpack
   name: loadout-group-mime-backpack
   loadouts:
-  - MimeBackpack
-  - MimeSatchel
-  - MimeDuffel
-  - MimeMessenger # Frontier
+    - MimeBackpack
+    - MimeSatchel
+    - MimeDuffel
+    - MimeMessenger # Frontier
 
 - type: loadoutGroup
   id: MimeOuterClothing
   name: loadout-group-mime-outerclothing
   minLimit: 0
   loadouts:
-  - MimeWintercoat
+    - MimeWintercoat
 
 - type: loadoutGroup
   id: MimeBelt
   name: loadout-group-mime-belt
   loadouts:
-  - MimeSuspendersRed
-  - MimeSuspendersBlack
+    - MimeSuspendersRed
+    - MimeSuspendersBlack
 
 - type: loadoutGroup
   id: SurvivalMime
@@ -795,36 +795,36 @@
   minLimit: 2
   hidden: true
   loadouts:
-  - EmergencyNitrogenMime
-  - EmergencyOxygenMime
-  - EmergencySpeciesMothMime
-  - EmergencyPlasmaMime
-  - LoadoutSpeciesVoxNitrogen
-  - LoadoutSpeciesPlasma # Goobstation
-  - EmergencyWaterVaporMime # Delta-V
-  - EmergencySilicon
+    - EmergencyNitrogenMime
+    - EmergencyOxygenMime
+    - EmergencySpeciesMothMime
+    - EmergencyPlasmaMime
+    - LoadoutSpeciesVoxNitrogen
+    - LoadoutSpeciesPlasma # Goobstation
+    - EmergencyWaterVaporMime # Delta-V
+    - EmergencySilicon
 
 - type: loadoutGroup
   id: MimeJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieMime
+    - LizardPlushieMime
 
 - type: loadoutGroup
   id: MusicianJumpsuit
   name: loadout-group-musician-jumpsuit
   loadouts:
-  - MusicianJumpsuit
-  - MusicianJumpskirt
-  - ServiceMJ # goob
+    - MusicianJumpsuit
+    - MusicianJumpskirt
+    - ServiceMJ # goob
 
 - type: loadoutGroup
   id: MusicianOuterClothing
   name: loadout-group-musician-outerclothing
   minLimit: 0
   loadouts:
-  - MusicianWintercoat
+    - MusicianWintercoat
 
 - type: loadoutGroup
   id: Instruments
@@ -832,41 +832,41 @@
   minLimit: 0
   maxLimit: 2
   loadouts:
-  - Glockenspiel
-  - MusicBox
-  - Xylophone
-  - Microphone
-  - Synthesizer
-  - Kalimba
-  - Woodblock
-  - ElectricGuitar
-  - BassGuitar
-  - RockGuitar
-  - AcousticGuitar
-  - Banjo
-  - Violin
-  - Viola
-  - Cello
-  - Trumpet
-  - Trombone
-  - FrenchHorn
-  - Euphonium
-  - Saxophone
-  - Accordion
-  - Harmonica
-  - Clarinet
-  - Flute
-  - Recorder
-  - PanFlute
-  - Ocarina
-  - Bagpipe
+    - Glockenspiel
+    - MusicBox
+    - Xylophone
+    - Microphone
+    - Synthesizer
+    - Kalimba
+    - Woodblock
+    - ElectricGuitar
+    - BassGuitar
+    - RockGuitar
+    - AcousticGuitar
+    - Banjo
+    - Violin
+    - Viola
+    - Cello
+    - Trumpet
+    - Trombone
+    - FrenchHorn
+    - Euphonium
+    - Saxophone
+    - Accordion
+    - Harmonica
+    - Clarinet
+    - Flute
+    - Recorder
+    - PanFlute
+    - Ocarina
+    - Bagpipe
 
 - type: loadoutGroup
   id: MusicianJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieMusician
+    - LizardPlushieMusician
 
 # Cargo
 - type: loadoutGroup
@@ -874,138 +874,138 @@
   name: loadout-group-quartermaster-head
   minLimit: 0
   loadouts:
-  - QuartermasterHead
-  - QuartermasterBeret
+    - QuartermasterHead
+    - QuartermasterBeret
 
 - type: loadoutGroup
   id: QuartermasterJumpsuit
   name: loadout-group-quartermaster-jumpsuit
   loadouts:
-  - QuartermasterJumpsuit
-  - QuartermasterJumpskirt
-  - QuartermasterTurtleneck
-  - QuartermasterTurtleneckSkirt
-  - QuartermasterFormalSuit
-  - QuartermasterMJ # goob
-  - QMSummerShirt # goob
+    - QuartermasterJumpsuit
+    - QuartermasterJumpskirt
+    - QuartermasterTurtleneck
+    - QuartermasterTurtleneckSkirt
+    - QuartermasterFormalSuit
+    - QuartermasterMJ # goob
+    - QMSummerShirt # goob
 
 - type: loadoutGroup
   id: QuartermasterNeck
   name: loadout-group-quartermaster-neck
   minLimit: 0
   loadouts:
-  - QuartermasterCloak
-  - QuartermasterMantle
-  - QuartermasterEnsemble # goob
+    - QuartermasterCloak
+    - QuartermasterMantle
+    - QuartermasterEnsemble # goob
 
 - type: loadoutGroup
   id: QuartermasterOuterClothing
   name: loadout-group-quartermaster-outerclothing
   minLimit: 0
   loadouts:
-  - QuartermasterWintercoat
+    - QuartermasterWintercoat
 
 - type: loadoutGroup
   id: QuartermasterShoes
   name: loadout-group-quartermaster-shoes
   loadouts:
-  - BrownShoes
-  - CargoWinterBoots
+    - BrownShoes
+    - CargoWinterBoots
 
 - type: loadoutGroup
   id: QuartermasterJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieQuartermaster
+    - LizardPlushieQuartermaster
 
 - type: loadoutGroup
   id: CargoTechnicianHead
   name: loadout-group-cargo-technician-head
   minLimit: 0
   loadouts:
-  - CargoTechnicianHead
-  - CargoTechnicianHeadMail # Goob/DeltaV - Mail # fixmail
+    - CargoTechnicianHead
+    - CargoTechnicianHeadMail # Goob/DeltaV - Mail # fixmail
 
 - type: loadoutGroup
   id: CargoTechnicianJumpsuit
   name: loadout-group-cargo-technician-jumpsuit
   loadouts:
-  - CargoTechnicianJumpsuit
-  - CargoTechnicianJumpskirt
-  - CargoTechnicianOveralls #Goob
-  - CargoTechnicianJumpsuitMail # Goob/DeltaV - Mail # Fixmail
-  - CargoTechnicianJumpskirtMail # Goob/DeltaV - Mail
-  - CargoTechMJ # goob
-  - MailCarrierMJ #Goob
+    - CargoTechnicianJumpsuit
+    - CargoTechnicianJumpskirt
+    - CargoTechnicianOveralls #Goob
+    - CargoTechnicianJumpsuitMail # Goob/DeltaV - Mail # Fixmail
+    - CargoTechnicianJumpskirtMail # Goob/DeltaV - Mail
+    - CargoTechMJ # goob
+    - MailCarrierMJ #Goob
 
 - type: loadoutGroup
   id: CargoTechnicianBackpack
   name: loadout-group-cargo-technician-backpack
   loadouts:
-  - CargoTechnicianBackpack
-  - CargoTechnicianSatchel
-  - CargoTechnicianDuffel
-  - CargoTechnicianMessenger # Frontier
+    - CargoTechnicianBackpack
+    - CargoTechnicianSatchel
+    - CargoTechnicianDuffel
+    - CargoTechnicianMessenger # Frontier
 
 - type: loadoutGroup
   id: CargoTechnicianOuterClothing
   name: loadout-group-cargo-technician-outerclothing
   minLimit: 0
   loadouts:
-  - CargoTechnicianWintercoat
-  - CargoTechnicianWintercoatMail # Goob/DeltaV - Mail # todo marty fixmail
+    - CargoTechnicianWintercoat
+    - CargoTechnicianWintercoatMail # Goob/DeltaV - Mail # todo marty fixmail
 
 - type: loadoutGroup
   id: CargoTechnicianShoes
   name: loadout-group-cargo-technician-shoes
   loadouts:
-  - BlackShoes
-  - CargoWinterBoots
+    - BlackShoes
+    - CargoWinterBoots
 
 - type: loadoutGroup
   id: CargoTechnicianID
   name: loadout-group-cargo-technician-id
   loadouts:
-  - CargoTechnicianPDA
-  - SeniorCourierPDA
+    - CargoTechnicianPDA
+    - SeniorCourierPDA
 
 - type: loadoutGroup
   id: CargoTechnicianJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieCargoTechnician
+    - LizardPlushieCargoTechnician
 
 - type: loadoutGroup
   id: SalvageSpecialistBackpack
   name: loadout-group-salvage-specialist-backpack
   loadouts:
-  - SalvageSpecialistBackpack
-  - SalvageSpecialistSatchel
-  - SalvageSpecialistDuffel
-  - SalvageSpecialistMessenger # Frontier
+    - SalvageSpecialistBackpack
+    - SalvageSpecialistSatchel
+    - SalvageSpecialistDuffel
+    - SalvageSpecialistMessenger # Frontier
 
 - type: loadoutGroup
   id: SalvageSpecialistOuterClothing
   name: loadout-group-salvage-specialist-outerclothing
   minLimit: 0
   loadouts:
-  - SalvageSpecialistWintercoat
+    - SalvageSpecialistWintercoat
 
 - type: loadoutGroup
   id: SalvageSpecialistShoes
   name: loadout-group-salvage-specialist-shoes
   loadouts:
-  - SalvageBoots
-  - CargoWinterBoots
+    - SalvageBoots
+    - CargoWinterBoots
 
 - type: loadoutGroup
   id: SalvageSpecialistJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieSalvageSpecialist
+    - LizardPlushieSalvageSpecialist
 
 # Engineering
 - type: loadoutGroup
@@ -1013,176 +1013,176 @@
   name: loadout-group-chief-engineer-head
   minLimit: 0
   loadouts:
-  - ChiefEngineerHead
-  - ChiefEngineerBeret
+    - ChiefEngineerHead
+    - ChiefEngineerBeret
 
 - type: loadoutGroup
   id: ChiefEngineerJumpsuit
   name: loadout-group-chief-engineer-jumpsuit
   loadouts:
-  - ChiefEngineerJumpsuit
-  - ChiefEngineerJumpskirt
-  - ChiefEngineerTurtleneck
-  - ChiefEngineerTurtleneckSkirt
-  - ChiefEngineerMJ # goob
-  - CESummerShirt # goob
+    - ChiefEngineerJumpsuit
+    - ChiefEngineerJumpskirt
+    - ChiefEngineerTurtleneck
+    - ChiefEngineerTurtleneckSkirt
+    - ChiefEngineerMJ # goob
+    - CESummerShirt # goob
 
 - type: loadoutGroup
   id: ChiefEngineerNeck
   name: loadout-group-chief-engineer-neck
   minLimit: 0
   loadouts:
-  - ClothingNeckCloakWhiteCe # goob
-  - ClothingNeckCloakGreenCe # goob
-  - ClothingNeckMantleWhiteCE # goob
-  - ClothingNeckMantleOrangeCE # goob
-  - ClothingNeckEnsembleChiefEngineerWhite # goob
-  - ClothingNeckEnsembleChiefEngineerGreen # goob
+    - ClothingNeckCloakWhiteCe # goob
+    - ClothingNeckCloakGreenCe # goob
+    - ClothingNeckMantleWhiteCE # goob
+    - ClothingNeckMantleOrangeCE # goob
+    - ClothingNeckEnsembleChiefEngineerWhite # goob
+    - ClothingNeckEnsembleChiefEngineerGreen # goob
 
 - type: loadoutGroup
   id: ChiefEngineerOuterClothing
   name: loadout-group-chief-engineer-outerclothing
   minLimit: 0
   loadouts:
-  - ChiefEngineerWintercoat
+    - ChiefEngineerWintercoat
 
 - type: loadoutGroup
   id: ChiefEngineerShoes
   name: loadout-group-chief-engineer-shoes
   loadouts:
-  - BrownShoes
-  - EngineeringWinterBoots
+    - BrownShoes
+    - EngineeringWinterBoots
 
 - type: loadoutGroup
   id: ChiefEngineerJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieChiefEngineer
+    - LizardPlushieChiefEngineer
 
 - type: loadoutGroup
   id: TechnicalAssistantJumpsuit
   name: loadout-group-technical-assistant-jumpsuit
   loadouts:
-  - YellowJumpsuit
-  - YellowJumpskirt
-  - EngiMJ # goob
+    - YellowJumpsuit
+    - YellowJumpskirt
+    - EngiMJ # goob
 
 - type: loadoutGroup
   id: TechnicalAssistantJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieTechnicalAssistant
+    - LizardPlushieTechnicalAssistant
 
 - type: loadoutGroup
   id: StationEngineerHead
   name: loadout-group-station-engineer-head
   minLimit: 0
   loadouts:
-  - StationEngineerHardhatYellow
-  - StationEngineerHardhatOrange
-  - StationEngineerHardhatRed
-  - SeniorEngineerBeret
+    - StationEngineerHardhatYellow
+    - StationEngineerHardhatOrange
+    - StationEngineerHardhatRed
+    - SeniorEngineerBeret
 
 - type: loadoutGroup
   id: StationEngineerJumpsuit
   name: loadout-group-station-engineer-jumpsuit
   loadouts:
-  - StationEngineerJumpsuit
-  - StationEngineerJumpskirt
-  - StationEngineerHazardsuit
-  - SeniorEngineerJumpsuit
-  - SeniorEngineerJumpskirt
-  - EngiMJ # goob
-  - StationEngineerJumpsuitCasual # goob
+    - StationEngineerJumpsuit
+    - StationEngineerJumpskirt
+    - StationEngineerHazardsuit
+    - SeniorEngineerJumpsuit
+    - SeniorEngineerJumpskirt
+    - EngiMJ # goob
+    - StationEngineerJumpsuitCasual # goob
 
 - type: loadoutGroup
   id: StationEngineerBackpack
   name: loadout-group-station-engineer-backpack
   loadouts:
-  - StationEngineerBackpack
-  - StationEngineerSatchel
-  - StationEngineerDuffel
-  - StationEngineerMessenger # Frontier
+    - StationEngineerBackpack
+    - StationEngineerSatchel
+    - StationEngineerDuffel
+    - StationEngineerMessenger # Frontier
 
 - type: loadoutGroup
   id: StationEngineerOuterClothing
   name: loadout-group-station-engineer-outerclothing
   minLimit: 0
   loadouts:
-  - StationEngineerOuterVest
-  - StationEngineerWintercoat
+    - StationEngineerOuterVest
+    - StationEngineerWintercoat
 
 - type: loadoutGroup
   id: StationEngineerShoes
   name: loadout-group-station-engineer-shoes
   loadouts:
-  - WorkBoots
-  - EngineeringWinterBoots
+    - WorkBoots
+    - EngineeringWinterBoots
 
 - type: loadoutGroup
   id: StationEngineerID
   name: loadout-group-station-engineer-id
   loadouts:
-  - StationEngineerPDA
-  - SeniorEngineerPDA
+    - StationEngineerPDA
+    - SeniorEngineerPDA
 
 - type: loadoutGroup
   id: StationEngineerJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieStationEngineer
+    - LizardPlushieStationEngineer
 
 - type: loadoutGroup
   id: AtmosphericTechnicianHead
   name: loadout-group-atmospheric-technician-head
   minLimit: 0
   loadouts:
-  - SeniorEngineerBeret   # Goobstation
+    - SeniorEngineerBeret # Goobstation
 
 - type: loadoutGroup
   id: AtmosphericTechnicianJumpsuit
   name: loadout-group-atmospheric-technician-jumpsuit
   loadouts:
-  - AtmosphericTechnicianJumpsuit
-  - AtmosphericTechnicianJumpskirt
-  - AtmosphericTechnicianJumpsuitCasual
-  - SeniorEngineerJumpskirt  # Goobstation
-  - SeniorEngineerJumpsuit   # Goobstation
-  - AtmosMJ # goob
+    - AtmosphericTechnicianJumpsuit
+    - AtmosphericTechnicianJumpskirt
+    - AtmosphericTechnicianJumpsuitCasual
+    - SeniorEngineerJumpskirt # Goobstation
+    - SeniorEngineerJumpsuit # Goobstation
+    - AtmosMJ # goob
 
 - type: loadoutGroup
   id: AtmosphericTechnicianOuterClothing
   name: loadout-group-atmospheric-technician-outerclothing
   minLimit: 0
   loadouts:
-  - AtmosphericTechnicianWintercoat
-  - AtmosOveralls # CorvaxGoob
+    - AtmosphericTechnicianWintercoat
+    - AtmosOveralls # CorvaxGoob
 
 - type: loadoutGroup
   id: AtmosphericTechnicianBackpack
   name: loadout-group-atmospheric-technician-backpack
   loadouts:
-  - AtmosphericTechnicianBackpack
-  - AtmosphericTechnicianSatchel
-  - AtmosphericTechnicianDuffel
-  - AtmosphericTechnicianMessenger # Frontier
+    - AtmosphericTechnicianBackpack
+    - AtmosphericTechnicianSatchel
+    - AtmosphericTechnicianDuffel
+    - AtmosphericTechnicianMessenger # Frontier
 
 - type: loadoutGroup
   id: AtmosphericTechnicianShoes
   name: loadout-group-atmospheric-technician-shoes
   loadouts:
-  - WhiteShoes
-  - EngineeringWinterBoots
+    - WhiteShoes
+    - EngineeringWinterBoots
 
 - type: loadoutGroup
   id: AtmosphericTechnicianJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieAtmosphericTechnician
+    - LizardPlushieAtmosphericTechnician
 
 - type: loadoutGroup
   id: SurvivalExtended
@@ -1190,13 +1190,13 @@
   minLimit: 2
   hidden: true
   loadouts:
-  - EmergencyNitrogenExtended
-  - EmergencyOxygenExtended
-  - EmergencyPlasmaExtended
-  - LoadoutSpeciesVoxNitrogen
-  - LoadoutSpeciesPlasma # Goobstation
-  - EmergencyWaterVaporExtended # Delta-V
-  - EmergencySilicon
+    - EmergencyNitrogenExtended
+    - EmergencyOxygenExtended
+    - EmergencyPlasmaExtended
+    - LoadoutSpeciesVoxNitrogen
+    - LoadoutSpeciesPlasma # Goobstation
+    - EmergencyWaterVaporExtended # Delta-V
+    - EmergencySilicon
 
 # Science
 - type: loadoutGroup
@@ -1204,151 +1204,151 @@
   name: loadout-group-research-director-head
   minLimit: 0
   loadouts:
-  - ResearchDirectorBeret
+    - ResearchDirectorBeret
 
 - type: loadoutGroup
   id: ResearchDirectorNeck
   name: loadout-group-research-director-neck
   minLimit: 0
   loadouts:
-  - ResearchDirectorMantle
-  - ResearchDirectorCloak
-  - ResearchDirectorEnsemble # goob
+    - ResearchDirectorMantle
+    - ResearchDirectorCloak
+    - ResearchDirectorEnsemble # goob
 
 - type: loadoutGroup
   id: ResearchDirectorJumpsuit
   name: loadout-group-research-director-jumpsuit
   loadouts:
-  - ResearchDirectorJumpsuit
-  - ResearchDirectorJumpsuitAlt # goob
-  - ResearchDirectorJumpskirt
-  - ResearchDirectorJumpskirtAlt # goob
-  - ResearchDirectorMJ # goob
-  # CorvaxGoob-Loadouts-Start
-  - ResearchDirectorJumpsuitClassical
-  - ResearchDirectorJumpskirtClassical
-  # CorvaxGoob-Loadouts-End
-  - RDSummerShirt # goob
+    - ResearchDirectorJumpsuit
+    - ResearchDirectorJumpsuitAlt # goob
+    - ResearchDirectorJumpskirt
+    - ResearchDirectorJumpskirtAlt # goob
+    - ResearchDirectorMJ # goob
+    # CorvaxGoob-Loadouts-Start
+    - ResearchDirectorJumpsuitClassical
+    - ResearchDirectorJumpskirtClassical
+    # CorvaxGoob-Loadouts-End
+    - RDSummerShirt # goob
 
 - type: loadoutGroup
   id: ResearchDirectorOuterClothing
   name: loadout-group-research-director-outerclothing
   minLimit: 0
   loadouts:
-  - ResearchDirectorLabCoat
-  - ResearchDirectorWintercoat
-  - ResearchDirectorLabCoatPurple #goob
+    - ResearchDirectorLabCoat
+    - ResearchDirectorWintercoat
+    - ResearchDirectorLabCoatPurple #goob
 
 - type: loadoutGroup
   id: ResearchDirectorShoes
   name: loadout-group-research-director-shoes
   loadouts:
-  - BrownShoes
-  - ScienceWinterBoots
+    - BrownShoes
+    - ScienceWinterBoots
 
 - type: loadoutGroup
   id: ResearchDirectorJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieResearchDirector
+    - LizardPlushieResearchDirector
 
 - type: loadoutGroup
   id: ScientistHead
   name: loadout-group-scientist-head
   minLimit: 0
   loadouts:
-  #- RoboticistCap
-  #- SkullBandana
-  - ScientificBeret
+    #- RoboticistCap
+    #- SkullBandana
+    - ScientificBeret
 
 - type: loadoutGroup
   id: ScientistNeck
   name: loadout-group-scientist-neck
   minLimit: 0
   loadouts:
-  - ScientistTie
+    - ScientistTie
 
 - type: loadoutGroup
   id: ScientistJumpsuit
   name: loadout-group-scientist-jumpsuit
   loadouts:
-  - ScientistJumpsuit
-  - ScientistJumpskirt
-  #- RoboticistJumpsuit
-  #- RoboticistJumpskirt
-  - SeniorResearcherJumpsuit
-  - SeniorResearcherJumpskirt
-  - ResearchMJ # goob
-  - ScientistFormal # goob
-  - SeniorResearcherMJ #goob
+    - ScientistJumpsuit
+    - ScientistJumpskirt
+    #- RoboticistJumpsuit
+    #- RoboticistJumpskirt
+    - SeniorResearcherJumpsuit
+    - SeniorResearcherJumpskirt
+    - ResearchMJ # goob
+    - ScientistFormal # goob
+    - SeniorResearcherMJ #goob
 
 - type: loadoutGroup
   id: ScientistBackpack
   name: loadout-group-scientist-backpack
   loadouts:
-  - ScientistBackpack
-  - ScientistSatchel
-  - ScientistDuffel
-  - ScientistMessenger # Frontier
+    - ScientistBackpack
+    - ScientistSatchel
+    - ScientistDuffel
+    - ScientistMessenger # Frontier
 
 - type: loadoutGroup
   id: ScientistOuterClothing
   name: loadout-group-scientist-outerclothing
   minLimit: 0
   loadouts:
-  - RegularLabCoat
-  - ScienceLabCoat
-  - ScienceWintercoat
-  - RoboticistLabCoat
-  - RoboticistWintercoat
-  - SeniorResearcherLabCoat
+    - RegularLabCoat
+    - ScienceLabCoat
+    - ScienceWintercoat
+    - RoboticistLabCoat
+    - RoboticistWintercoat
+    - SeniorResearcherLabCoat
 
 - type: loadoutGroup
   id: ScientistShoes
   name: loadout-group-scientist-shoes
   loadouts:
-  - WhiteShoes
-  - BlackShoes
-  - ScienceWinterBoots
+    - WhiteShoes
+    - BlackShoes
+    - ScienceWinterBoots
 
 - type: loadoutGroup
   id: ScientistGloves
   name: loadout-group-scientist-gloves
   minLimit: 0
   loadouts:
-  - LatexGloves
-  - PurpleGloves
-  - RobohandsGloves
+    - LatexGloves
+    - PurpleGloves
+    - RobohandsGloves
 
 - type: loadoutGroup
   id: ScientistPDA
   name: loadout-group-scientist-id
   loadouts:
-  - ScientistPDA
-  - SeniorResearcherPDA
+    - ScientistPDA
+    - SeniorResearcherPDA
 
 - type: loadoutGroup
   id: ScientistJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieScientist
+    - LizardPlushieScientist
 
 - type: loadoutGroup
   id: ResearchAssistantJumpsuit
   name: loadout-group-research-assistant-jumpsuit
   loadouts:
-  - WhiteJumpsuit
-  - WhiteJumpskirt
-  - ResearchMJ # goob
+    - WhiteJumpsuit
+    - WhiteJumpskirt
+    - ResearchMJ # goob
 
 - type: loadoutGroup
   id: ResearchAssistantJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieResearchAssistant
+    - LizardPlushieResearchAssistant
 
 # Security
 - type: loadoutGroup
@@ -1356,227 +1356,227 @@
   name: loadout-group-head-of-security-head
   minLimit: 0
   loadouts:
-  - HeadofSecurityHead
-  - HeadofSecurityBeret
-  - HeadofSecuritySpecialBeret # Goobstation
+    - HeadofSecurityHead
+    - HeadofSecurityBeret
+    - HeadofSecuritySpecialBeret # Goobstation
 
 - type: loadoutGroup
   id: HeadofSecurityJumpsuit
   name: loadout-group-head-of-security-jumpsuit
   loadouts:
-  - HeadofSecurityJumpsuit
-  - HeadofSecurityJumpskirt
-  - HeadofSecurityTurtleneck
-  - HeadofSecurityTurtleneckSkirt
-  - HeadofSecurityFormalSuit
-  - HeadofSecurityFormalSkirt
-  # CorvaxGoob-Loadouts-Start
-  - HeadofSecurityJumpsuitBlack
-  - HeadofSecurityJumpskirtBlack
-  # CorvaxGoob-Loadouts-End
-  - HoSSummerShirt # goob
-  - HoSMJ # goob
+    - HeadofSecurityJumpsuit
+    - HeadofSecurityJumpskirt
+    - HeadofSecurityTurtleneck
+    - HeadofSecurityTurtleneckSkirt
+    - HeadofSecurityFormalSuit
+    - HeadofSecurityFormalSkirt
+    # CorvaxGoob-Loadouts-Start
+    - HeadofSecurityJumpsuitBlack
+    - HeadofSecurityJumpskirtBlack
+    # CorvaxGoob-Loadouts-End
+    - HoSSummerShirt # goob
+    - HoSMJ # goob
 
 - type: loadoutGroup
   id: HeadofSecurityNeck
   name: loadout-group-head-of-security-neck
   minLimit: 0
   loadouts:
-  - HeadofSecurityCloak
-  - HeadofSecurityMantle
-  - HeadofSecurityCloakExperimental # CorvaxGoob
-  - Bodycam # Goobstation - Body cameras
-  - HeadOfSecurityEnsemble # goob
-  - ClothingNeckMantleHOSShoulder #CorvaxGoob
+    - HeadofSecurityCloak
+    - HeadofSecurityMantle
+    - HeadofSecurityCloakExperimental # CorvaxGoob
+    - Bodycam # Goobstation - Body cameras
+    - HeadOfSecurityEnsemble # goob
+    - ClothingNeckMantleHOSShoulder #CorvaxGoob
 
 - type: loadoutGroup
   id: HeadofSecurityOuterClothing
   name: loadout-group-head-of-security-outerclothing
   loadouts:
-  - HeadofSecurityCoat
-  - HeadofSecurityWinterCoat
-  - HeadofSecurityGreatCoat # Goobstation
-  - HeadofSecurityVestWeb # Goobstation
+    - HeadofSecurityCoat
+    - HeadofSecurityWinterCoat
+    - HeadofSecurityGreatCoat # Goobstation
+    - HeadofSecurityVestWeb # Goobstation
 
 - type: loadoutGroup
   id: HeadofSecurityJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieHeadofSecurity
-  - SecStar
+    - LizardPlushieHeadofSecurity
+    - SecStar
 
 - type: loadoutGroup
   id: WardenHead
   name: loadout-group-warden-head
   minLimit: 0
   loadouts:
-  - WardenHead
-  - WardenBeret
-# CorvaxGoob-Loadouts-Start
-  - WardenCap
-  - WardenHeadAlt
+    - WardenHead
+    - WardenBeret
+    # CorvaxGoob-Loadouts-Start
+    - WardenCap
+    - WardenHeadAlt
 # CorvaxGoob-Loadouts-End
 
 - type: loadoutGroup
   id: WardenJumpsuit
   name: loadout-group-warden-jumpsuit
   loadouts:
-  - WardenJumpsuit
-  - WardenJumpskirt
-  - WardenMJ # goob
+    - WardenJumpsuit
+    - WardenJumpskirt
+    - WardenMJ # goob
 
 - type: loadoutGroup
   id: WardenOuterClothing
   name: loadout-group-warden-outerclothing
   loadouts:
-  - WardenCoat
-  - WardenArmoredWinterCoat
-  - WardenCoatBlue #goob
+    - WardenCoat
+    - WardenArmoredWinterCoat
+    - WardenCoatBlue #goob
 
 - type: loadoutGroup
   id: WardenJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieWarden
-  - SecStar
+    - LizardPlushieWarden
+    - SecStar
 
 - type: loadoutGroup
   id: SecurityHead
   name: loadout-group-security-head
   minLimit: 0
   loadouts:
-  - SecurityHelmet
-  - SecurityHelmetAlt # Goobstation
-  - SecurityBeret
-  - SecurityHat
-  - TrooperHat
-  - SideCap
+    - SecurityHelmet
+    - SecurityHelmetAlt # Goobstation
+    - SecurityBeret
+    - SecurityHat
+    - TrooperHat
+    - SideCap
 
 - type: loadoutGroup
   id: SecurityJumpsuit
   name: loadout-group-security-jumpsuit
   loadouts:
-  - SecurityJumpsuit
-  - SecurityJumpskirt
-  - SecurityJumpsuitGrey
-  - SecurityJumpskirtGrey
-  - SeniorOfficerJumpsuit
-  - SeniorOfficerJumpskirt
-  - TrooperUniform
-  - UniformJumpsuitDSS # _CorvaxGoob
-  - VeteranOfficerBlackJumpsuit # Goobstation
-  - SecurityMJ # Goob
-  - SecurityMJSenior # Goob
+    - SecurityJumpsuit
+    - SecurityJumpskirt
+    - SecurityJumpsuitGrey
+    - SecurityJumpskirtGrey
+    - SeniorOfficerJumpsuit
+    - SeniorOfficerJumpskirt
+    - TrooperUniform
+    - UniformJumpsuitDSS # _CorvaxGoob
+    - VeteranOfficerBlackJumpsuit # Goobstation
+    - SecurityMJ # Goob
+    - SecurityMJSenior # Goob
 
 - type: loadoutGroup
   id: SecurityBackpack
   name: loadout-group-security-backpack
   loadouts:
-  - SecurityBackpack
-  - SecuritySatchel
-  - SecurityDuffel
-  - SecurityMessenger # Frontier
+    - SecurityBackpack
+    - SecuritySatchel
+    - SecurityDuffel
+    - SecurityMessenger # Frontier
 
 - type: loadoutGroup
   id: SecurityBelt
   name: loadout-group-security-belt
   loadouts:
-  - SecurityBelt
-  - SecurityWebbing
-  - SecurityJudoBelt # Goobstation - Martial Arts
+    - SecurityBelt
+    - SecurityWebbing
+    - SecurityJudoBelt # Goobstation - Martial Arts
 
 - type: loadoutGroup
   id: SecurityOuterClothing
   name: loadout-group-security-outerclothing
   loadouts:
-  - ArmorVest
-  - ArmorVestSlim
-  - SecurityOfficerWintercoat
-  - WinterCoatSeniorSecArmored # Goobstation
-  - VeteranOfficerArmor # Goobstation
+    - ArmorVest
+    - ArmorVestSlim
+    - SecurityOfficerWintercoat
+    - WinterCoatSeniorSecArmored # Goobstation
+    - VeteranOfficerArmor # Goobstation
 
 - type: loadoutGroup
   id: SecurityShoes
   name: loadout-group-security-shoes
   loadouts:
-  - JackBoots
-  - CombatBoots # Goobstation
-  - SecurityWinterBoots
-  - ClothingShoesSwatBoots # CorvaxGoob
+    - JackBoots
+    - CombatBoots # Goobstation
+    - SecurityWinterBoots
+    - ClothingShoesSwatBoots # CorvaxGoob
 
 - type: loadoutGroup
   id: SecurityPDA
   name: loadout-group-security-id
   loadouts:
-  - SecurityPDA
-  - SeniorOfficerPDA
+    - SecurityPDA
+    - SeniorOfficerPDA
 
 - type: loadoutGroup
   id: SecurityJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieSecurity
-  - SecStar
+    - LizardPlushieSecurity
+    - SecStar
 
 - type: loadoutGroup
   id: DetectiveHead
   name: loadout-group-detective-head
   minLimit: 0
   loadouts:
-  - DetectiveFedora
-  - DetectiveFedoraGrey
+    - DetectiveFedora
+    - DetectiveFedoraGrey
 
 - type: loadoutGroup
   id: DetectiveNeck
   name: loadout-group-detective-neck
   minLimit: 0
   loadouts:
-  - DetectiveTie
-  - Bodycam # Goobstation - Body cameras
+    - DetectiveTie
+    - Bodycam # Goobstation - Body cameras
 
 - type: loadoutGroup
   id: DetectiveJumpsuit
   name: loadout-group-detective-jumpsuit
   loadouts:
-  - DetectiveJumpsuit
-  - DetectiveJumpskirt
-  - NoirJumpsuit
-  - NoirJumpskirt
+    - DetectiveJumpsuit
+    - DetectiveJumpskirt
+    - NoirJumpsuit
+    - NoirJumpskirt
 
 - type: loadoutGroup
   id: DetectiveOuterClothing
   name: loadout-group-detective-outerclothing
   loadouts:
-  - DetectiveArmorVest
-  - DetectiveCoat
-  - DetectiveCoatGrey
-  - DetectiveCoatBlack # CorvaxGoob
+    - DetectiveArmorVest
+    - DetectiveCoat
+    - DetectiveCoatGrey
+    - DetectiveCoatBlack # CorvaxGoob
 
 - type: loadoutGroup
   id: DetectiveJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieDetective
-  - SecStar
+    - LizardPlushieDetective
+    - SecStar
 
 - type: loadoutGroup
   id: SecurityCadetJumpsuit
   name: loadout-group-security-cadet-jumpsuit
   loadouts:
-  - RedJumpsuit
-  - RedJumpskirt
-  - RedMJ #Goob
+    - RedJumpsuit
+    - RedJumpskirt
+    - RedMJ #Goob
 
 - type: loadoutGroup
   id: SecurityCadetJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieSecurityCadet
+    - LizardPlushieSecurityCadet
 
 - type: loadoutGroup
   id: SurvivalSecurity
@@ -1584,13 +1584,13 @@
   minLimit: 2
   hidden: true
   loadouts:
-  - EmergencyNitrogenSecurity
-  - EmergencyOxygenSecurity
-  - EmergencyPlasmaSecurity
-  - LoadoutSpeciesVoxNitrogen
-  - LoadoutSpeciesPlasma # Goobstation
-  - EmergencyWaterVaporSecurity # Delta-V
-  - EmergencySilicon
+    - EmergencyNitrogenSecurity
+    - EmergencyOxygenSecurity
+    - EmergencyPlasmaSecurity
+    - LoadoutSpeciesVoxNitrogen
+    - LoadoutSpeciesPlasma # Goobstation
+    - EmergencyWaterVaporSecurity # Delta-V
+    - EmergencySilicon
 
 # Medical
 - type: loadoutGroup
@@ -1598,236 +1598,236 @@
   name: loadout-group-chief-medical-officer-head
   minLimit: 0
   loadouts:
-  - ChiefMedicalOfficerBeret
-  - CMOMedicalHeadMirror
-  - ChemistUshanka # Goobstation
+    - ChiefMedicalOfficerBeret
+    - CMOMedicalHeadMirror
+    - ChemistUshanka # Goobstation
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerJumpsuit
   name: loadout-group-chief-medical-officer-jumpsuit
   loadouts:
-  - ChiefMedicalOfficerJumpsuit
-  - ChiefMedicalOfficerJumpskirt
-  - ChiefMedicalOfficerTurtleneckJumpsuit
-  - ChiefMedicalOfficerTurtleneckJumpskirt
-  - CMOMJ # goob
+    - ChiefMedicalOfficerJumpsuit
+    - ChiefMedicalOfficerJumpskirt
+    - ChiefMedicalOfficerTurtleneckJumpsuit
+    - ChiefMedicalOfficerTurtleneckJumpskirt
+    - CMOMJ # goob
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerOuterClothing
   name: loadout-group-chief-medical-officer-outerclothing
   minLimit: 0
   loadouts:
-  - ChiefMedicalOfficerLabCoat
-  - ChiefMedicalOfficerWintercoat
+    - ChiefMedicalOfficerLabCoat
+    - ChiefMedicalOfficerWintercoat
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerNeck
   name: loadout-group-chief-medical-officer-neck
   minLimit: 0
   loadouts:
-  - ChiefMedicalOfficerCloak
-  - ChiefMedicalOfficerMantle
-  - ChiefMedicalOfficerEnsemble # goob
+    - ChiefMedicalOfficerCloak
+    - ChiefMedicalOfficerMantle
+    - ChiefMedicalOfficerEnsemble # goob
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerShoes
   name: loadout-group-chief-medical-officer-shoes
   loadouts:
-  - BrownShoes
-  - MedicalWinterBoots
+    - BrownShoes
+    - MedicalWinterBoots
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieChiefMedicalOfficer
+    - LizardPlushieChiefMedicalOfficer
 
 - type: loadoutGroup
   id: MedicalDoctorHead
   name: loadout-group-medical-doctor-head
   minLimit: 0
   loadouts:
-  - MedicalBeret
-  - SeniorPhysicianBeret
-  - MedicalHeadMirror
-  - BlueSurgeryCap
-  - GreenSurgeryCap
-  - PurpleSurgeryCap
-  - NurseHat
+    - MedicalBeret
+    - SeniorPhysicianBeret
+    - MedicalHeadMirror
+    - BlueSurgeryCap
+    - GreenSurgeryCap
+    - PurpleSurgeryCap
+    - NurseHat
 
 - type: loadoutGroup
   id: MedicalDoctorJumpsuit
   name: loadout-group-medical-doctor-jumpsuit
   loadouts:
-  - MedicalDoctorJumpsuit
-  - MedicalDoctorJumpskirt
-  - SeniorPhysicianJumpsuit
-  - SeniorPhysicianJumpskirt
-  - MedicalBlueScrubs
-  - MedicalGreenScrubs
-  - MedicalPurpleScrubs
-  - MedicMJ # goob
+    - MedicalDoctorJumpsuit
+    - MedicalDoctorJumpskirt
+    - SeniorPhysicianJumpsuit
+    - SeniorPhysicianJumpskirt
+    - MedicalBlueScrubs
+    - MedicalGreenScrubs
+    - MedicalPurpleScrubs
+    - MedicMJ # goob
 
 - type: loadoutGroup
   id: MedicalDoctorOuterClothing
   name: loadout-group-medical-doctor-outerclothing
   minLimit: 0
   loadouts:
-  - RegularLabCoat
-  - MedicalDoctorWintercoat
-  - SeniorPhysicianLabCoat
+    - RegularLabCoat
+    - MedicalDoctorWintercoat
+    - SeniorPhysicianLabCoat
 
 - type: loadoutGroup
   id: MedicalBackpack
   name: loadout-group-medical-doctor-backpack
   loadouts:
-  - MedicalDoctorBackpack
-  - MedicalDoctorSatchel
-  - MedicalDoctorDuffel
-  - MedicalDoctorMessenger # Frontier
+    - MedicalDoctorBackpack
+    - MedicalDoctorSatchel
+    - MedicalDoctorDuffel
+    - MedicalDoctorMessenger # Frontier
 
 - type: loadoutGroup
   id: MedicalShoes
   name: loadout-group-medical-doctor-shoes
   loadouts:
-  - WhiteShoes
-  - MedicalWinterBoots
+    - WhiteShoes
+    - MedicalWinterBoots
 
 - type: loadoutGroup
   id: MedicalDoctorPDA
   name: loadout-group-medical-doctor-id
   loadouts:
-  - MedicalDoctorPDA
-  - SeniorPhysicianPDA
+    - MedicalDoctorPDA
+    - SeniorPhysicianPDA
 
 - type: loadoutGroup
   id: MedicalGloves
   name: loadout-group-medical-gloves
   minLimit: 1 # CorvaxGoob-loadouts: 0 > 1
   loadouts:
-  - LatexGloves
-  - NitrileGloves
+    - LatexGloves
+    - NitrileGloves
 
 - type: loadoutGroup
   id: MedicalMask
   name: loadout-group-medical-mask
   minLimit: 0
   loadouts:
-  - SterileMask
+    - SterileMask
 
 - type: loadoutGroup
   id: MedicalDoctorJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieMedicalDoctor
+    - LizardPlushieMedicalDoctor
 
 - type: loadoutGroup
   id: MedicalInternJumpsuit
   name: loadout-group-medical-intern-jumpsuit
   loadouts:
-  - WhiteJumpsuit
-  - WhiteJumpskirt
-  - MedicMJ # goob
+    - WhiteJumpsuit
+    - WhiteJumpskirt
+    - MedicMJ # goob
 
 - type: loadoutGroup
   id: MedicalInternJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieMedicalIntern
+    - LizardPlushieMedicalIntern
 
 - type: loadoutGroup
   id: ChemistJumpsuit
   name: loadout-group-chemist-jumpsuit
   loadouts:
-  - ChemistJumpsuit
-  - ChemistJumpskirt
-  - SeniorPhysicianJumpsuit # Goobstation
-  - SeniorPhysicianJumpskirt # Goobstation
-  - ChemistMJ # goob
+    - ChemistJumpsuit
+    - ChemistJumpskirt
+    - SeniorPhysicianJumpsuit # Goobstation
+    - SeniorPhysicianJumpskirt # Goobstation
+    - ChemistMJ # goob
 
 - type: loadoutGroup
   id: ChemistOuterClothing
   name: loadout-group-chemist-outerclothing
   minLimit: 0
   loadouts:
-  - RegularLabCoat
-  - ChemistLabCoat
-  - ChemistWintercoat
-  - SeniorPhysicianLabCoat # Goobstation
+    - RegularLabCoat
+    - ChemistLabCoat
+    - ChemistWintercoat
+    - SeniorPhysicianLabCoat # Goobstation
 
 - type: loadoutGroup
   id: ChemistBackpack
   name: loadout-group-chemist-backpack
   loadouts:
-  - ChemistBackpack
-  - ChemistSatchel
-  - ChemistDuffel
-  - ChemistMessenger # Frontier
+    - ChemistBackpack
+    - ChemistSatchel
+    - ChemistDuffel
+    - ChemistMessenger # Frontier
 
 - type: loadoutGroup
   id: ChemistJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieChemist
+    - LizardPlushieChemist
 
 - type: loadoutGroup
   id: ParamedicHead
   name: loadout-group-paramedic-head
   minLimit: 0
   loadouts:
-  - ParamedicHead
-  - SeniorPhysicianBeret # Goobstation
+    - ParamedicHead
+    - SeniorPhysicianBeret # Goobstation
 
 - type: loadoutGroup
   id: ParamedicJumpsuit
   name: loadout-group-paramedic-jumpsuit
   loadouts:
-  - ParamedicJumpsuit
-  - ParamedicJumpskirt
-  - SeniorPhysicianJumpsuit # Goobstation
-  - SeniorPhysicianJumpskirt # Goobstation
-  - ParamedMJ # goob
+    - ParamedicJumpsuit
+    - ParamedicJumpskirt
+    - SeniorPhysicianJumpsuit # Goobstation
+    - SeniorPhysicianJumpskirt # Goobstation
+    - ParamedMJ # goob
 
 - type: loadoutGroup
   id: ParamedicOuterClothing
   name: loadout-group-paramedic-outerclothing
   minLimit: 0
   loadouts:
-  - ParamedicWindbreaker
-  - ParamedicWintercoat
-  - ParamedicDavidsJacket # Goobstation
-  - SeniorPhysicianLabCoat # Goobstation
+    - ParamedicWindbreaker
+    - ParamedicWintercoat
+    - ParamedicDavidsJacket # Goobstation
+    - SeniorPhysicianLabCoat # Goobstation
 
 - type: loadoutGroup
   id: ParamedicShoes
   name: loadout-group-paramedic-shoes
   loadouts:
-  - BlueShoes
-  - WhiteShoes
-  - MedicalWinterBoots
+    - BlueShoes
+    - WhiteShoes
+    - MedicalWinterBoots
 
 - type: loadoutGroup
   id: ParamedicJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieParamedic
+    - LizardPlushieParamedic
 
 - type: loadoutGroup
   id: MedicalEyewear
   name: loadout-group-medical-glasses
   minLimit: 0
   loadouts:
-  - MedicalHud
-  - MedicalEyePatchHud
-  - Glasses
-  - CheapSunglasses # CorvaxGoob-loadouts
-  - GlassesJamjar
-  - GlassesJensen
+    - MedicalHud
+    - MedicalEyePatchHud
+    - Glasses
+    - CheapSunglasses # CorvaxGoob-loadouts
+    - GlassesJamjar
+    - GlassesJensen
 
 - type: loadoutGroup
   id: SurvivalMedical
@@ -1835,43 +1835,43 @@
   minLimit: 2
   hidden: true
   loadouts:
-  - EmergencyNitrogenMedical
-  - EmergencyOxygenMedical
-  - EmergencyPlasmaMedical
-  - LoadoutSpeciesVoxNitrogen
-  - LoadoutSpeciesPlasma # Goobstation
-  - EmergencyWaterVaporMedical # Delta-V
-  - EmergencySilicon
+    - EmergencyNitrogenMedical
+    - EmergencyOxygenMedical
+    - EmergencyPlasmaMedical
+    - LoadoutSpeciesVoxNitrogen
+    - LoadoutSpeciesPlasma # Goobstation
+    - EmergencyWaterVaporMedical # Delta-V
+    - EmergencySilicon
 
 # Wildcards
 - type: loadoutGroup
   id: ReporterJumpsuit
   name: loadout-group-reporter-jumpsuit
   loadouts:
-  - ReporterJumpsuit
-  - JournalistJumpsuit
-  - ReporterDress
+    - ReporterJumpsuit
+    - JournalistJumpsuit
+    - ReporterDress
 
 - type: loadoutGroup
   id: ReporterJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushieReporter
+    - LizardPlushieReporter
 
 - type: loadoutGroup
   id: PsychologistJumpsuit
   name: loadout-group-psychologist-jumpsuit
   loadouts:
-  - PsychologistJumpsuit
-  - PsychologistJumpskirt
+    - PsychologistJumpsuit
+    - PsychologistJumpskirt
 
 - type: loadoutGroup
   id: PsychologistJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
   loadouts:
-  - LizardPlushiePsychologist
+    - LizardPlushiePsychologist
 
 # Other
 - type: loadoutGroup
@@ -1880,13 +1880,13 @@
   minLimit: 2
   hidden: true
   loadouts:
-  - EmergencyNitrogenSyndicate
-  - EmergencyOxygenSyndicate
-  - EmergencyPlasmaSyndicate
-  - LoadoutSpeciesVoxNitrogen
-  - LoadoutSpeciesPlasma # Goobstation
-  - EmergencyWaterVaporSyndicate # Delta-V
-  - EmergencySilicon
+    - EmergencyNitrogenSyndicate
+    - EmergencyOxygenSyndicate
+    - EmergencyPlasmaSyndicate
+    - LoadoutSpeciesVoxNitrogen
+    - LoadoutSpeciesPlasma # Goobstation
+    - EmergencyWaterVaporSyndicate # Delta-V
+    - EmergencySilicon
 
 - type: loadoutGroup
   id: SurvivalMilitaryDouble
@@ -1894,8 +1894,8 @@
   minLimit: 2
   hidden: true
   loadouts:
-  - EmergencyNitrogenMilitaryDouble
-  - EmergencyOxygenMilitaryDouble
+    - EmergencyNitrogenMilitaryDouble
+    - EmergencyOxygenMilitaryDouble
 
 - type: loadoutGroup
   id: GroupSpeciesBreathTool
@@ -1904,7 +1904,7 @@
   maxLimit: 1
   hidden: true
   loadouts:
-  - LoadoutSpeciesBreathTool
+    - LoadoutSpeciesBreathTool
 
 - type: loadoutGroup
   id: GroupSpeciesBreathToolMedical
@@ -1913,7 +1913,7 @@
   maxLimit: 1
   hidden: true
   loadouts:
-  - LoadoutSpeciesBreathToolMedical
+    - LoadoutSpeciesBreathToolMedical
 
 - type: loadoutGroup
   id: GroupSpeciesBreathToolSecurity
@@ -1922,4 +1922,4 @@
   maxLimit: 1
   hidden: true
   loadouts:
-  - LoadoutSpeciesBreathToolSecurity
+    - LoadoutSpeciesBreathToolSecurity

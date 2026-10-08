@@ -591,6 +591,57 @@ namespace Content.Client.Stylesheets
             var contextMenuExpansionTexture = resCache.GetTexture("/Textures/Interface/VerbIcons/group.svg.192dpi.png");
             var verbMenuConfirmationTexture = resCache.GetTexture("/Textures/Interface/VerbIcons/group.svg.192dpi.png");
 
+            // Monotone (unfilled)
+            var monotoneButton = new StyleBoxTexture
+            {
+                Texture = resCache.GetTexture("/Textures/Interface/Nano/Monotone/monotone_button.svg.96dpi.png"),
+            };
+            monotoneButton.SetPatchMargin(StyleBox.Margin.All, 11);
+            monotoneButton.SetPadding(StyleBox.Margin.All, 1);
+            monotoneButton.SetContentMarginOverride(StyleBox.Margin.Vertical, 2);
+            monotoneButton.SetContentMarginOverride(StyleBox.Margin.Horizontal, 14);
+
+            var monotoneButtonOpenLeft = new StyleBoxTexture(monotoneButton)
+            {
+                Texture = resCache.GetTexture("/Textures/Interface/Nano/Monotone/monotone_button_open_left.svg.96dpi.png"),
+            };
+
+            var monotoneButtonOpenRight = new StyleBoxTexture(monotoneButton)
+            {
+                Texture = resCache.GetTexture("/Textures/Interface/Nano/Monotone/monotone_button_open_right.svg.96dpi.png"),
+            };
+
+            var monotoneButtonOpenBoth = new StyleBoxTexture(monotoneButton)
+            {
+                Texture = resCache.GetTexture("/Textures/Interface/Nano/Monotone/monotone_button_open_both.svg.96dpi.png"),
+            };
+
+            // Monotone (filled)
+            var monotoneFilledButton = new StyleBoxTexture(monotoneButton)
+            {
+                Texture = buttonTex,
+            };
+
+            var monotoneFilledButtonOpenLeft = new StyleBoxTexture(monotoneButton)
+            {
+                Texture = new AtlasTexture(buttonTex, UIBox2.FromDimensions(new Vector2(10, 0), new Vector2(14, 24))),
+            };
+            monotoneFilledButtonOpenLeft.SetPatchMargin(StyleBox.Margin.Left, 0);
+
+            var monotoneFilledButtonOpenRight = new StyleBoxTexture(monotoneButton)
+            {
+                Texture = new AtlasTexture(buttonTex, UIBox2.FromDimensions(new Vector2(0, 0), new Vector2(14, 24))),
+            };
+            monotoneFilledButtonOpenRight.SetPatchMargin(StyleBox.Margin.Right, 0);
+
+            var monotoneFilledButtonOpenBoth = new StyleBoxTexture(monotoneButton)
+            {
+                Texture = new AtlasTexture(buttonTex, UIBox2.FromDimensions(new Vector2(10, 0), new Vector2(3, 24))),
+            };
+            monotoneFilledButtonOpenBoth.SetPatchMargin(StyleBox.Margin.Horizontal, 0);
+
+
+
             // south-facing arrow:
             var directionIconArrowTex = resCache.GetTexture("/Textures/Interface/VerbIcons/drop.svg.192dpi.png");
             var directionIconQuestionTex = resCache.GetTexture("/Textures/Interface/VerbIcons/information.svg.192dpi.png");

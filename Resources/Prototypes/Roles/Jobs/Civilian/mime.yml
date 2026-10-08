@@ -5,25 +5,22 @@
   name: job-name-mime
   description: job-description-mime
   playTimeTracker: JobMime
-  requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 4h
   startingGear: MimeGear
   icon: "JobIconMime"
   supervisors: job-supervisors-hop
   #goobcoins: 10 #Goob content Corvax-Goob-coins
   requirements: # Wormix edit
     - !type:OverallPlaytimeRequirement
-      time: 10800 #3 hrs
+      time: 3h #3 hrs
   access:
-  - Theatre
-  - Maintenance
+    - Theatre
+    - Maintenance
   special:
-  - !type:AddComponentSpecial
-    components:
-    - type: MimePowers
-      preventWriting: true
-    - type: FrenchAccent
+    - !type:AddComponentSpecial
+      components:
+        - type: MimePowers
+          preventWriting: true
+        - type: FrenchAccent
 
 - type: startingGear
   id: MimeGear
@@ -35,7 +32,7 @@
     ears: ClothingHeadsetService
   storage:
     back:
-    - RubberStampMime
+      - RubberStampMime
 
 - type: entity
   parent: BaseAction
@@ -43,14 +40,14 @@
   name: Create Invisible Wall
   description: Create an invisible wall in front of you, if placeable there.
   components:
-  - type: Action
-    priority: -1
-    useDelay: 30
-    icon:
-      sprite: Structures/Walls/solid.rsi
-      state: full
-  - type: InstantAction
-    event: !type:InvisibleWallActionEvent
+    - type: Action
+      priority: -1
+      useDelay: 30
+      icon:
+        sprite: Structures/Walls/solid.rsi
+        state: full
+    - type: InstantAction
+      event: !type:InvisibleWallActionEvent
 
 - type: chameleonOutfit
   id: MimeChameleonOutfit

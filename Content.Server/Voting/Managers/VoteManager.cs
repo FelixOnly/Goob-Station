@@ -28,7 +28,6 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
-using Serilog;
 
 namespace Content.Server.Voting.Managers
 {
@@ -482,10 +481,7 @@ namespace Content.Server.Voting.Managers
 
                 await _discord.CreateMessage(hook, payload);
             }
-            catch (Exception e)
-            {
-                Log.Error($"Failed to send vote information to webhook!\n{e}");
-            }
+            catch { }
         }
         // Wormix end
 

@@ -27,8 +27,8 @@
     Chest: MobHydrakinTorso
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
-    UndergarmentBottom: MobHumanoidAnyMarking
-    UndergarmentTop: MobHumanoidAnyMarking
+    #UndergarmentBottom: MobHumanoidAnyMarking # Wormix
+    #UndergarmentTop: MobHumanoidAnyMarking # Wormix
     Tail: MobHumanoidAnyMarking
     # Eyes: MobHydrakinEyes
     LArm: MobHydrakinLArm

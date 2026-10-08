@@ -29,8 +29,8 @@
     Groin: MobHarpyGroin
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
-    #UndergarmentTop: MobHumanoidAnyMarking
-    #UndergarmentBottom: MobHumanoidAnyMarking
+    ##UndergarmentTop: MobHumanoidAnyMarking # Wormix
+    ##UndergarmentBottom: MobHumanoidAnyMarking # Wormix
     Tail: MobHumanoidAnyMarking
     Eyes: MobHumanoidEyes
     LArm: MobHarpyLArm

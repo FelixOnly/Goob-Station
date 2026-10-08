@@ -6,12 +6,6 @@
 #  storage:
 #    back:
 #    - GoldRing
-- type: loadout
-  id: GoldRing
-  storage:
-    back:
-    - GoldRing
-  groupBy: "ring" # GoobStation
 
 # Orion-Edit: Duplicate
 #- type: loadout
@@ -19,31 +13,25 @@
 #  storage:
 #    back:
 #    - SilverRing
-- type: loadout
-  id: SilverRing
-  storage:
-    back:
-    - SilverRing
-  groupBy: "ring"  # GoobStation
 
 - type: loadout
   id: WhiteCane
   storage:
     back:
-    - WhiteCane
+      - WhiteCane
 
 - type: loadout
   id: TapeRecorder
   storage:
     back:
-    - TapeRecorderFilled
+      - TapeRecorderFilled
 
 - type: loadout
   id: DrinkOniGourd
   effects:
-  - !type:SpeciesLoadoutEffect
-    species:
-    - Oni
+    - !type:SpeciesLoadoutEffect
+      species:
+        - Oni
   storage:
     back:
-    - DrinkOniGourd
+      - DrinkOniGourd

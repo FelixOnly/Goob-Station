@@ -36,8 +36,8 @@
     Snout: MobShadowkinAnyMarkingFollowSkin
     HeadTop: MobShadowkinAnyMarking
     HeadSide: MobShadowkinAnyMarkingFollowSkin
-    UndergarmentTop: MobHumanoidAnyMarking
-    UndergarmentBottom: MobHumanoidAnyMarking
+    #UndergarmentTop: MobHumanoidAnyMarking # Wormix
+    #UndergarmentBottom: MobHumanoidAnyMarking # Wormix
     Tail: MobShadowkinAnyMarkingFollowSkin
     Chest: MobShadowkinChest
     Groin: MobShadowkinGroin

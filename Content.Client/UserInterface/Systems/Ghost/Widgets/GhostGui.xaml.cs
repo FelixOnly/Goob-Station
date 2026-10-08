@@ -39,7 +39,6 @@ public sealed partial class GhostGui : UIWidget
         ReturnToRound.OnPressed += _ => ReturnToRoundPressed?.Invoke(); // Europa
         // GhostBarButton.OnPressed += _ => GhostBarPressed?.Invoke(); // CorvaxGoob-GhostBar
         GhostRolesButton.OnPressed += _ => GhostRolesButton.StyleClasses.Remove(StyleClass.Negative);
-        GhostBarButton.OnPressed += _ => GhostBarPressed?.Invoke(); // CorvaxGoob-GhostBar
         // Wormix remove
         // ThunderdomeButton.OnPressed += _ => ThunderdomePressed?.Invoke(); // Goobstation - Thunderdome
     }
