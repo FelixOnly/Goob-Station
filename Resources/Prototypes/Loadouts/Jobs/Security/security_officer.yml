@@ -3,25 +3,22 @@
 - type: loadoutEffectGroup
   id: SeniorOfficer
   effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobWarden
-      time: 6h
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:DepartmentTimeRequirement
-      department: Security
-      time: 60h
+    - !type:JobRequirementLoadoutEffect
+      requirement: !type:RoleTimeRequirement
+        role: JobWarden
+        time: 6h
+    - !type:JobRequirementLoadoutEffect
+      requirement: !type:DepartmentTimeRequirement
+        department: Security
+        time: 60h
 
 - type: loadoutEffectGroup # Goobstation?
   id: VeteranOfficer
   effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:DepartmentTimeRequirement
-      department: Security
-      time: 100h
+    - !type:JobRequirementLoadoutEffect
+      requirement: !type:DepartmentTimeRequirement
+        department: Security
+        time: 100h
 
 # Head
 - type: loadout
@@ -168,13 +165,3 @@
       proto: SeniorOfficer
   equipment:
     id: SeniorOfficerPDA
-
-# Misc
-- type: loadout
-  id: SecStar
-  effects:
-    - !type:GroupLoadoutEffect
-      proto: SecurityStarWorthy
-  storage:
-    back:
-      - Dinkystar
