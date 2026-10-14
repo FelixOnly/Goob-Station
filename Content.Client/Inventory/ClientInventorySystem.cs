@@ -1,6 +1,34 @@
+// SPDX-FileCopyrightText: 2020 chairbender <kwhipke1@gmail.com>
+// SPDX-FileCopyrightText: 2021 Michael Phillips <1194692+MeltedPixel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@gmail.com>
+// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2021 ike709 <ike709@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2021 ike709 <sparebytes@protonmail.com>
+// SPDX-FileCopyrightText: 2021 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 2022 Jezithyr <jmaster9999@gmail.com>
+// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-using System.Linq;
 using Content.Client.Clothing;
 using Content.Client.Examine;
 using Content.Client.Verbs.UI;
@@ -145,16 +173,6 @@ namespace Content.Client.Inventory
             }
         }
 
-        public bool TryAddSlotDef(EntityUid owner, InventorySlotsComponent component, SlotDefinition newSlotDef)
-        {
-            SlotData newSlotData = newSlotDef; //convert to slotData
-            if (!component.SlotData.TryAdd(newSlotDef.Name, newSlotData))
-                return false;
-
-            if (owner == _playerManager.LocalEntity)
-                OnSlotAdded?.Invoke(newSlotData);
-            return true;
-        }
 
         public void ReloadInventory(InventorySlotsComponent? component = null)
         {
@@ -179,10 +197,7 @@ namespace Content.Client.Inventory
         public void UpdateSlot(EntityUid owner, InventorySlotsComponent component, string slotName,
             bool? blocked = null, bool? highlight = null)
         {
-            // The slot might have been removed when changing templates, which can cause items to be dropped.
-            if (!component.SlotData.TryGetValue(slotName, out var oldData))
-                return;
-
+            var oldData = component.SlotData[slotName];
             var newHighlight = oldData.Highlighted;
             var newBlocked = oldData.Blocked;
 
@@ -198,28 +213,14 @@ namespace Content.Client.Inventory
                 EntitySlotUpdate?.Invoke(newData);
         }
 
-        public bool TryAddSlotData(Entity<InventorySlotsComponent> ent, SlotData newSlotData)
+        public bool TryAddSlotDef(EntityUid owner, InventorySlotsComponent component, SlotDefinition newSlotDef)
         {
-            if (!ent.Comp.SlotData.TryAdd(newSlotData.SlotName, newSlotData))
+            SlotData newSlotData = newSlotDef; //convert to slotData
+            if (!component.SlotData.TryAdd(newSlotDef.Name, newSlotData))
                 return false;
 
-            if (TryGetSlotContainer(ent.Owner, newSlotData.SlotName, out var newContainer, out _))
-                ent.Comp.SlotData[newSlotData.SlotName].Container = newContainer;
-
-            if (ent.Owner == _playerManager.LocalEntity)
+            if (owner == _playerManager.LocalEntity)
                 OnSlotAdded?.Invoke(newSlotData);
-
-            return true;
-        }
-
-        public bool TryRemoveSlotData(Entity<InventorySlotsComponent> ent, SlotData removedSlotData)
-        {
-            if (!ent.Comp.SlotData.Remove(removedSlotData.SlotName))
-                return false;
-
-            if (ent.Owner == _playerManager.LocalEntity)
-                OnSlotRemoved?.Invoke(removedSlotData);
-
             return true;
         }
 
@@ -270,34 +271,14 @@ namespace Content.Client.Inventory
         {
             base.UpdateInventoryTemplate(ent);
 
-            if (!TryComp<InventorySlotsComponent>(ent, out var inventorySlots))
-                return;
-
-            List<SlotData> slotDataToRemove = new(); // don't modify dict while iterating
-
-            foreach (var slotData in inventorySlots.SlotData.Values)
+            if (TryComp(ent, out InventorySlotsComponent? inventorySlots))
             {
-                if (!ent.Comp.Slots.Any(s => s.Name == slotData.SlotName))
-                    slotDataToRemove.Add(slotData);
+                foreach (var slot in ent.Comp.Slots)
+                {
+                    if (inventorySlots.SlotData.TryGetValue(slot.Name, out var slotData))
+                        slotData.SlotDef = slot;
+                }
             }
-
-            // remove slots that are no longer in the new template
-            foreach (var slotData in slotDataToRemove)
-            {
-                TryRemoveSlotData((ent.Owner, inventorySlots), slotData);
-            }
-
-            // update existing slots or add them if they don't exist yet
-            foreach (var slot in ent.Comp.Slots)
-            {
-                if (inventorySlots.SlotData.TryGetValue(slot.Name, out var slotData))
-                    slotData.SlotDef = slot;
-                else
-                    TryAddSlotData((ent.Owner, inventorySlots), (SlotData)slot);
-            }
-
-            if (ent.Owner == _playerManager.LocalEntity)
-                ReloadInventory(inventorySlots);
         }
 
         public sealed class SlotData

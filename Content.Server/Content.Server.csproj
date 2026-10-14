@@ -26,6 +26,9 @@
   <ItemGroup>
     <Folder Include="_ADT\" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="_ADT\" />
+  </ItemGroup>
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
 
   <Import Project="..\RobustToolbox\Imports\Lidgren.props" />

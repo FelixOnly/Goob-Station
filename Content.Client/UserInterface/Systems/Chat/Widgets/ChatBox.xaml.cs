@@ -37,6 +37,8 @@ public partial class ChatBox : UIWidget
 
     private readonly ChatSearchController _searchController; // ADT-Tweak
 
+    private readonly ChatSearchController _searchController; // ADT-Tweak
+
     public bool Main { get; set; }
 
     public string SearchFilter { get; private set; } = string.Empty; // ADT-Tweak
