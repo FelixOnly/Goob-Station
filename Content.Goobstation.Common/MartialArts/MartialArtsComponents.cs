@@ -49,4 +49,5 @@ public enum MartialArtsForms
     Ninjutsu,
     HellRip,
     Mimejutsu, // CorvaxGoob - Mimejutsu
+    Combatives, // Wormix EDIT
 }
